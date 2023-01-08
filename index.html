@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<head>
+    <html lang="en" data-theme="light">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/var.css?version=1">
+    <link rel="stylesheet" href="./css/style.css?version=2">
+    <link rel="stylesheet" href="./css/reponsive.css?version=3">
+
+    <script src="./js/assets/jquery-3.5.1.js"></script>
+    <script src='./js/assets/kit.fontawsome.min.js' crossorigin='anonymous'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+</head>
+
+<body>
+    <div class="tab-group" id="profile-detail" ></div>    
+    <div class="tab-group" id="technical"></div>    
+    
+    <div class="group" id="education"></div>    
+    <div class="group" id="intership"></div>    
+    <div class="group" id="certification"></div>    
+    <div class="group" id="work_expe"></div>  
+
+    <div class="tab-group" id="pro_experience"></div>
+    <div class="tab-group" id="hobbies"></div> 
+    <div class="tab-group" id="strength"></div> 
+    <div class="tab-group" id="commun-activities"></div> 
+    <div class="tab-group" id="o-system"></div> 
+    <div class="tab-group" id="personal-detail"></div> 
+    
+
+    <footer>
+        <!-- <hr> -->
+        <span class="pagenum"></span><b> |</b> ADITYA
+    </footer>
+    <script src="./js/helper.js?version=1"></script>
+    <script src="./js/app.js?version=1"></script>
+    <script src="./js/index.js?version=1"></script>
+    <script>
+        function printPDF() {
+            var theText = $('body').text();
+            var printWindow = window.open('', '', 'height=400,width=800');
+            printWindow.document.write(theText);
+            printWindow.document.close();
+            printWindow.print();
+            // console.log($(theText));
+        }
+    </script>  
+</body>
+
+
+
+</html>

@@ -1,0 +1,145 @@
+/********************************************
+* MEDIA QUERIES
+*/
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {}
+
+/* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+
+@media (min-width: 1025px) and (max-width: 1280px) {}
+
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .group {
+        margin: 1rem 0rem;
+    }
+}
+
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .group {
+        padding: 1rem 0.2rem;
+    }
+    .tab-section {
+        --tab-margin: 0rem 1rem;
+    }
+    /* #left-button, #right-button {display: none;} */
+}
+
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+
+@media (min-width: 481px) and (max-width: 767px) {
+    :root {
+        --body-margin: 2rem 0rem;
+        --inline-tab-font: 0.9rem;
+        --tab-content: 0.8rem;
+        --mt: 2rem;
+        --tab-avtar-width: 100px;
+        --prodile-card-gap: 10px;
+        --prodile-card-padding: 8px 12px;
+        --profile-card-icon: 3rem;
+        
+    }        
+    .group {
+        padding: 1rem 0.2rem;
+    }
+    .tab-section {
+        --tab-margin: 0rem 0.5rem;
+    }
+    .small-hide {display: grid; grid-template-columns: 1fr; gap: 0.1rem;} 
+    /* #left-button, #right-button {display: none;} */
+}
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+
+@media (min-width: 320px) and (max-width: 480px) {
+    :root {
+        --body-margin: 2rem 0rem;
+        --inline-tab-font: 0.8rem;
+        --tab-content: 0.8rem;
+        --mt: 2rem;
+        --prodile-card-gap: 10px;
+        --prodile-card-padding: 8px 12px;
+        --profile-card-icon: 3rem;
+    }     
+    .group {
+        padding: 1rem 0.2rem;
+    }
+    .tab-section {
+        --tab-margin: 0rem 0.2rem;
+    }
+    .small-hide {display: grid; grid-template-columns: 1fr; gap: 0.1rem;} 
+    /* #left-button, #right-button {display: none;} */
+}
+
+@media (min-width: 280px) and (max-width: 480px) {
+    :root {
+        --mid-container: 100%;
+        --avtar-size: 40px;
+        --avtar-height: 40px;
+        --grid-gap: .6rem;
+        --group-header-spacing: 1rem;    
+        --body-margin: 2rem 0rem;
+        --inline-tab-font: 0.8rem;
+        --tab-content: 0.8rem;
+        --mt: 2rem;
+        --tab-avtar-width: 80px;
+        --tab-avtar-height: 90px;
+        --prodile-card-gap: 12px;
+        --prodile-card-padding: 8px 12px;
+        --profile-card-icon: 3rem;
+    }  
+    .group {
+        padding: 1rem 0.2rem;
+    }
+    .tab-section {
+        --tab-margin: 0rem 0.2rem;
+    }
+    .notification-grid {
+        gap: 0.6rem 0rem;
+    }
+    .small-hide {display: grid; grid-template-columns: 1fr; gap: 0.1rem;}
+    /* #left-button, #right-button {display: none;}    */
+        
+}
+
+
+@media screen and (max-width: 1300px) {}
+
+@media screen and (max-width: 1200px) {}
+
+@media screen and (max-width: 1050px) {}
+
+@media screen and (max-width: 992px) {}
+
+@media screen and (max-width: 890px) {}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 650px) {}
+
+@media screen and (max-width: 576px) {}
+
+@media screen and (max-width: 490px) {}

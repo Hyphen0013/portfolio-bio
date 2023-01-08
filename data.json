@@ -1,0 +1,411 @@
+{
+    "name": "Aditya",
+    "nic_name": "Rocky",
+    "image": "./images/img/Aditya Image.jpg",
+    "overall_experience": "3+ Years",
+    "current_profile": "Associate Software Engineer",
+
+    "detail": [
+        {
+            "height": "5' 6\"",
+            "mob_1": "8700172984",
+            "mob_2": "8130683129"
+        }
+    ],
+
+    "mobile": [
+        {
+            "mob_1": "8700172984",
+            "mob_2": "8130683129"
+        }
+    ],
+
+    "personal_detail": [
+        {
+            "father_name": "Mr. Sanjay Parsad",
+            "mother_name": "Mrs Sulochana Devi",
+            "sibling": "Two sisters",
+            "sister_1": "Mrs Sommya Kumari",
+            "siter_1_martial_status": "Married",
+            "sister_2": "Mrs Soni",
+            "siter_2_martial_status": "Married"
+        }
+    ],
+
+    "known_language": [
+        "Hindi",
+        "English"
+    ],
+
+    "personal_address": [
+        {
+            "house": "House No. 20",
+            "road_gali": "Gali No. 4",
+            "area": "Salapur Khera",
+            "district": "Bijwasan",
+            "city": "New Delhi",
+            "state": "New Delhi",
+            "country": "India",
+            "pincode": "110061"
+        }
+    ],
+
+    "declaration": {
+        "declaration": "I hereby declare that the above-mentioned information is correct up to my knowledge and I bear the responsibility for the correctness of the above-mentioned particulars."
+    },
+
+    "career_object": {
+        "header_description": "Innovative, task-driven professional with 3+ years of experience in web design and development accross product and service base industries. Work as full stack developer with front UI design as well as backend development. Make API in (Laravel) and Webservice in (Java) with unit testing and good knowledge in code debugging simple/complex issues, and implementing new features based on user feedback and good hand in JavaScript with testing",
+        "description": "To be a part of dynamic and challenging organization that will help in effective utilization and enhancement of my skills toward the achievement of self and organizational objectives.",
+        "points": "Project management, Code validation skills, Team leadership"
+    },
+    
+    "project": [
+        {
+            "minor_project": "College Management system, Catering services website named \"FoodCompany\"",
+            "graphic_design": "Logo design with Adobe Photoshop 2017"
+        },
+        {
+            "project_link": [
+                {
+                    "link": "http://aditya-bio.herokuapp.com/",
+                    "describe": "Portfolio (Data stored in JSON and replicate data by JavaScript use of XMLHttpRequest)"
+                },                
+                {
+                    "link": "https://hy-search-engine.herokuapp.com/",
+                    "describe": "Search engine! Made in express (NodeJS) and template ejs. You can search people and get details of the person. Scroll bottom to load more data in dashboard page"
+                },                
+                {
+                    "link": "http://honeybug.herokuapp.com/",
+                    "describe": "Static Website (Use Express - NodeJS for dynamic route)"
+                },                
+                {
+                    "link": "https://transformerhost.herokuapp.com/",
+                    "describe": "Static Website (use HTML, CSS and JavaScript)"
+                }
+            ],
+            "github_link": [
+                {
+                    "display": "Y",
+                    "link": "https://github.com/digyspab?tab=repositories",
+                    "describe": ""
+                },
+                {
+                    "display": "Y",
+                    "link": "https://github.com/Hyphen0013?tab=repositories",
+                    "describe": ""
+                }
+            ]
+        }
+
+    ],
+
+    "work_history": {
+        "type": "Web Development",
+        "organization": "As an intern in \"YouLorry\",",
+        "address": "Uttar Pradesh from June 2017 to Aug 2017"
+    },
+    
+    "summer_intership": {
+        "intern_1": {
+            "type": "Web Development",
+            "organization": "\"Aricent\" and \"NASSCOM\"",
+            "year": "2018",
+            "duration": "June to August",
+            "field": "Java and Web Development",
+            "address": "IEC College of Engineering and Technology",
+            "class": "fas fa-users internship",
+            "image": "./images/internship.png"  
+        }
+    },
+    
+    "work_experience": {
+        "company_1": {
+            "type": "Associate Software Engineer",
+            "status": "working",
+            "organization": "\"Garg Data Information (P) LTD\"",
+            "year": "2022-01 - Presently",
+            "technology": "<i>Java Developer</i>",
+            "total_exp": "2022-01 to till now",
+            "address": "B-20-21, Block B, Sector 3, Noida, Uttar Pradesh 201301",
+            "short_address": "Noida - 3",
+            "class": "fas fa-industry",
+            "image": "./images/organization.png",
+            "work_description": [
+                "Make Webservice in Java",
+                "UI Design use JavaScript",
+                "Use AG Grid for data render in table",
+                "Use in-built J4 Frame built by Garg Data Information (P) LTD."
+            ]           
+        },        
+        "company_2": {
+            "type": "Software Engineer",
+            "status": "leave",
+            "organization": "\"Prolitus Technology Pvt. Ltd. \"",
+            "year": "2019-08 to 2022-01",
+            "technology": "Work as <i>Laravel software developer </i>",
+            "total_exp": "2 Years 5 Months",
+            "address": "Stellar IT Park, Tower B, 5th Floor, Sector 62, Noida - 201309, Uttar Pradesh, India.",
+            "short_address": "Noida - 62",
+            "class": "fas fa-industry",
+            "image": "./images/organization.png",
+            "work_description": [
+                "Work as Full Stack Developer",
+                "UI Design",
+                "Use Datatable for data render in table",
+                "Make Rest API",
+                "Call API like Karza, etc, for check Aadhar, PAN Card varification",
+                "Encrypt data for API use SHA-16 algorithm to encrypt data"
+            ]              
+        }
+    },
+    
+    "education": {
+        "edu_1": {
+            "cource": "\"B. Tech\"",
+            "college": "\"IEC College of Engineering and Technology \"",
+            "year": "2015 to 2019",
+            "perce_type": "Percentage",
+            "branch": "Computer Science",
+            "aggregate": "67%",
+            "affiliated": "AKTU",
+            "address": "Plot No.:- 4, Surajpur Kasna Road, Institutional Area, Knowledge Park I"  ,
+            "city": "Greater Noida",
+            "state": "Uttar Pradesh",
+            "pin": "201310",
+            "class": "fas fa-graduation-cap",
+            "image": "./images/university.png"
+        },
+        "edu_2": {
+            "cource": "\"Intermediate\" (12th)",
+            "college": "\"NP Co-Edu. Senior Secondary School \"",
+            "year": "2014",
+            "perce_type": "Percentage",
+            "branch": "Science (Non Medical)",
+            "aggregate": "59%",
+            "affiliated": "CBSE",
+            "address": "Moti Bagh"  ,
+            "city": "New Delhi",
+            "state": "New Delhi",
+            "pin": "110021",
+            "class": "fas fa-school",
+            "image": "./images/school.png"
+        },
+        "edu_3": {
+            "cource": "\"High School\" (10th)",
+            "college": "\"Veer Public School, Kapashera \"",
+            "year": "2012",
+            "perce_type": "CGPA",
+            "branch": "",
+            "aggregate": "7.4",
+            "affiliated": "CBSE",
+            "address": "Kapashera"  ,
+            "city": "New Delhi",
+            "state": "New Delhi",
+            "pin": "110037",
+            "class": "fas fa-school",
+            "image": "./images/school.png"
+        }
+    },
+
+    "programming": [
+        {
+            "language": "HTML",
+            "image": "./images/programming/html.png",
+            "description": "HyperText Markup Language (HTML) is the basic scripting language used by web browsers to render pages on the world wide web. HyperText allows a user to click a link and be redirected to a new page referenced by that link.",
+            "class": "fab fa-html5",
+            "more_description": ""
+        },    
+        {
+            "language": "CSS",
+            "image": "./images/programming/CSS.png",
+            "description": "Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.",
+            "class": "fab fa-css3-alt",
+            "more_description": "CSS is among the core languages of the open web and is standardized across Web browsers according to W3C specifications. Previously, development of various parts of CSS specification was done synchronously, which allowed versioning of the latest recommendations. You might have heard about CSS1, CSS2.1, CSS3. However, CSS4 has never become an official version."
+        },    
+        {
+            "language": "JavaScript",
+            "image": "./images/programming/JavaScript.png",
+            "description": "JavaScript (often shortened to JS) is a lightweight, interpreted, object-oriented language with first-class functions, and is best known as the scripting language for Web pages, but it's used in many non-browser environments as well. It is a prototype-based, multi-paradigm scripting language that is dynamic, and supports object-oriented, imperative, and functional programming styles.",
+            "class": "fab fa-js javascript",
+            "more_description": ""
+        },
+        {
+            "language": "Jquery",
+            "image": "./images/programming/Jquery.png",
+            "description": "jQuery is a lightweight, \"write less, do more\", JavaScript library. The purpose of jQuery is to make it much easier to use JavaScript on your website. jQuery takes a lot of common tasks that require many lines of JavaScript code to accomplish, and wraps them into methods that you can call with a single line of code.",
+            "class": "far fa-file-code jquery",
+            "more_description": ""
+        },
+        {
+            "language": "Laravel",
+            "image": "./images/programming/Laravel.png",
+            "description": "Laravel is a free and open-source PHP web framework, created by Taylor Otwell and intended for the development of web applications following the model–view–controller (MVC) architectural pattern and based on Symfony.",
+            "class": "fab fa-laravel",
+            "more_description": ""
+        },
+        {
+            "language": "Java",
+            "image": "./images/programming/Java.png",
+            "description": "Java is a widely used object-oriented programming language and software platform that runs on billions of devices, including notebook computers, mobile devices, gaming consoles, medical devices and many others. The rules and syntax of Java are based on the C and C++ languages.",
+            "class": "fab fa-java",
+            "more_description": ""
+        },
+        {
+            "language": "JSP",
+            "image": "./images/programming/JSP.png",
+            "description": "JavaServer Pages (JSP) is a Java standard technology that enables you to write dynamic, data-driven pages for your Java web applications. JSP is built on top of the Java Servlet specification. The two technologies typically work together, especially in older Java web applications.",
+            "class": "fab fa-java jsp",
+            "more_description": ""
+        },
+        {
+            "language": "Servlet",
+            "image": "./images/programming/Java.png",
+            "description": "A servlet is a Java programming language class that is used to extend the capabilities of servers that host applications accessed by means of a request-response programming model. Although servlets can respond to any type of request, they are commonly used to extend the applications hosted by web servers.",
+            "class": "fab fa-java",
+            "more_description": ""
+        },
+        {
+            "language": "SQL",
+            "image": "./images/programming/sql.png",
+            "description": "Structured Query Language (SQL) is a standardized programming language that is used to manage relational databases and perform various operations on the data in them.",
+            "class": "fas fa-database",
+            "more_description": ""
+        }
+
+    ],
+
+    "os": [
+        {
+            "class":"fab fa-ubuntu",
+            "os_type": "Ubuntu Operating System"
+        },
+        {
+            "class":"fab fa-windows",
+            "os_type": "Windows Operating System"
+        },
+        {
+            "class":"fab fa-git-square",
+            "os_type": "(GIT) git version control"
+        }
+    ],
+
+    "project_experience": [
+        "Work on 3 projects (laravel) in organization related to Banking Sector",
+        "E-com website with cart and return policy made by self",
+        "Work on webhook API",
+        "Work on Simple API",
+        "Make webservice in java"
+    ],
+
+    "certification": [
+        {
+            "type": "Web Development",
+            "description": "Web Designing and Development by Aricent and NASSCOM",
+            "class": "fas fa-certificate",
+            "image": "./images/certificate.png"
+        },
+        {
+            "type": "Java core and Advance",
+            "description": "Java certificate in core and advance java",
+            "class": "fas fa-certificate",
+            "image": "./images/certificate.png"
+        }
+    ],
+
+    "community_activities": [
+        {
+            "description_1": "Volunteer in College fest",
+            "description_2": "NFS gaming zone competition winner"
+        }        
+    ],
+
+    "personal_strength": [
+        "Diligent working attitude.",
+        "Flexibility and adaptability.",
+        "Quick Learner.",
+        "Stress Tolerance.",
+        "Positive attitude"
+    ],
+
+    "hobbies": [
+        "Playing video game",
+        "Watching movie",
+        "Playing Cricket"
+    ],
+
+    "social_site": [
+        {
+            "site": "Gmail",
+            "display": "Y",
+            "fa_icon": "fas fa-envelope-square",
+            "username": "Aditya Kumar",
+            "email": "aditya813068@gmail.com",
+            "link_display": "N",
+            "link": "https://www.google.com/intl/en-GB/gmail/about/"
+        },
+        {
+            "site": "Mobile No",
+            "display": "Y",
+            "fa_icon": "fas fa-mobile-alt",
+            "username": "Mobile Number",
+            "email": "8130683129, <br>8700172984",
+            "link_display": "N",
+            "link": ""
+        },        
+        {
+            "site": "Address",
+            "display": "Y",
+            "fa_icon": "fa fa-map-marker",
+            "username": "Permanent Address",
+            "email": "House No. 20, Gali No. 4, Salapur Khera - Bijwasan, New Delhi (India) - 110061",
+            "link_display": "N",
+            "link": ""
+        },        
+        {
+            "site": "LinkedIn",
+            "display": "Y",
+            "fa_icon": "fab fa-linkedin-in",
+            "username": "Aditya (Rocky) -",
+            "email": "aditya813068@gmail.com",
+            "link_display": "Y",
+            "link": "https://www.linkedin.com/in/aditya-b9366b132/"
+        },
+        {
+            "site": "Twitter",
+            "display": "Y",
+            "fa_icon": "fab fa-twitter",
+            "username": "Aditya",
+            "email": "@aditya813068",
+            "link_display": "N",
+            "link": "https://twitter.com/"
+        },
+        {
+            "site": "Facebook",
+            "display": "N",
+            "fa_icon": "fab fa-facebook",
+            "username": "Rocky Kr",
+            "email": "rockyk536@gmail.com",
+            "link_display": "N",
+            "link": "https://www.facebook.com/login/"
+        },
+        {
+            "site": "Github",
+            "display": "Y",
+            "fa_icon": "fab fa-github",
+            "username": "digyspab",
+            "email": "digyspab@gmail.com",
+            "link_display": "Y",
+            "link": "https://github.com/digyspab"
+        },
+        {
+            "site": "KOO",
+            "display": "Y",
+            "image": "./images/koo.svg",
+            "username": "Aditya",
+            "email": "@aditya813068",
+            "link_display": "Y",
+            "link": "https://www.kooapp.com/profile/aditya813068"
+        }
+    ]
+}
