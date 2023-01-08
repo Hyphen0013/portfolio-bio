@@ -191,6 +191,7 @@ function resume1BottomRight(jsonOutput) {
     projectResume1(jsonOutput);
     certificationResume1(jsonOutput);
     onOSWorkResume1(jsonOutput);
+    functSkillResume1(jsonOutput);
     strengthResume1(jsonOutput);
     personalDetailsResume1(jsonOutput);
     declarationResume1(jsonOutput);
@@ -295,6 +296,29 @@ function onOSWorkResume1(jsonOutput) {
                 <span class="bg-grey">
                     <i class="${certification.class}"></i>
                     ${certification.os_type}
+                </span>
+            </div>
+        `;
+    }
+    
+    firstOutput += "</div>";
+    firstOutput += "</div>";
+    document.querySelector("#work-experience").insertAdjacentHTML("beforeend", firstOutput);
+}
+
+function functSkillResume1(jsonOutput) {
+    let firstOutput = `
+        <div class="resume1_right-content">
+            <h3 class="main_header-res1 f-blue">FUNCTIONAL SKILLS</h3>
+            <hr>  
+            <div class="res1_technical-skills padding-equal font-p">
+    `;
+    for(let skill of jsonOutput['functional_skills'])  {
+        firstOutput += `
+            <div>
+                <span class="bg-grey">
+                    <i class="${skill.class}"></i>
+                    ${skill['tech-name']}
                 </span>
             </div>
         `;

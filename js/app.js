@@ -1,23 +1,37 @@
+/**
+    1. href - the entire URL
+    2. protocol - the protocol of the URL
+    3. host - the hostname and port of the URL
+    4. hostname - the hostname of the URL
+    5. port - the port number the server uses for the URL
+    6. pathname - the path name of the URL
+    7. search - the query portion of the URL
+    8. hash - the anchor portion of the URL
+    9. origin - the window.location.protocol + '//' + window.location.host
+
+    console.log(window.location.origin)
+ */
 let http = new XMLHttpRequest();
-http.open("get", "../data.json", true);
+http.open("get", "data.json", true);
 http.send();
 http.onload = function () {
-  if (this.readyState == 4 && this.status == 200) {
-    let jsonOutput = JSON.parse(this.responseText);
+    if (this.readyState == 4 && this.status == 200) {
+        let jsonOutput = JSON.parse(this.responseText);
 
-    profileDetail(jsonOutput);
-    technicalSkills(jsonOutput);
-    education(jsonOutput);
-    intership(jsonOutput);
-    certification(jsonOutput);
-    workExperience(jsonOutput);
-    projectExperience(jsonOutput);
-    hobbies(jsonOutput);
-    strength(jsonOutput);
-    communitActivities(jsonOutput);
-    operatingSystem(jsonOutput);
-    personalDetails(jsonOutput);
-  }
+        profileDetail(jsonOutput);
+        technicalSkills(jsonOutput);
+        education(jsonOutput);
+        intership(jsonOutput);
+        certification(jsonOutput);
+        workExperience(jsonOutput);
+        projectExperience(jsonOutput);
+        hobbies(jsonOutput);
+        strength(jsonOutput);
+        communitActivities(jsonOutput);
+        operatingSystem(jsonOutput);
+        functionalSkills(jsonOutput);
+        personalDetails(jsonOutput);
+    }
 };
 
 function profileDetail(jsonOutput) {
@@ -25,7 +39,7 @@ function profileDetail(jsonOutput) {
     techOutput += `
         <section class="tab-section">
             <div class="group-header">
-                <div class="group-title" style="display: flex; align-items: end;">${sentencedCase("Details", seprater = " ")} </div> <a href="../resume/resume1.html" target="_blank" class="login_btn"> Resume</a>
+                <div class="group-title" style="display: flex; align-items: end;">${sentencedCase("Details", seprater = " ")} </div> <a href="resume/resume1.html" target="_blank" class="login_btn"> Resume</a>
             </div>
             <span class="scroll-btn left_scroll-btn" id="left-button"><i class="fas fa-angle-left"></i></span>
             <div class="tab tab-slider" id="prodil-tab"></div>
@@ -110,29 +124,29 @@ function profileDetail(jsonOutput) {
                                     
             </div>
         </div>`;
-    
+
     for (let programming of jsonOutput.programming) {
 
-    }      
+    }
     document.querySelector("#prodil-tab").insertAdjacentHTML("beforeend", getProOutput);
 
     const rightBtn = document.querySelector('#right-button');
     const leftBtn = document.querySelector('#left-button');
-    rightBtn.addEventListener("click", function(event) {
+    rightBtn.addEventListener("click", function (event) {
         const conent = document.querySelector('#prodil-tab');
         conent.scrollLeft += 300;
-        event.preventDefault();        
+        event.preventDefault();
         // document.querySelector(".left-margin").style.cssText = `
         //     margin-left: 0px;
         // `;
 
-    }); 
-    
-    leftBtn.addEventListener("click", function(event) {
+    });
+
+    leftBtn.addEventListener("click", function (event) {
         const conent = document.querySelector('#prodil-tab');
         conent.scrollLeft -= 300;
         event.preventDefault();
-    });    
+    });
 }
 
 // TECHNICAL SKIL
@@ -162,8 +176,8 @@ function technicalSkills(jsonOutput) {
                 </div>
             </div> 
         `;
-        document.querySelector("#technical-tab").insertAdjacentHTML("beforeend", getProOutput); 
-    }  
+        document.querySelector("#technical-tab").insertAdjacentHTML("beforeend", getProOutput);
+    }
 }
 
 // EDUCATIONS
@@ -181,15 +195,15 @@ function education(jsonOutput) {
     document.querySelector("#education").innerHTML = eduOutput;
     var getEduOutput = "";
 
-    for(let i = 0; i < Object.keys(jsonOutput.education).length; i++) {
+    for (let i = 0; i < Object.keys(jsonOutput.education).length; i++) {
         var eduNo = String(Object.keys(jsonOutput.education)[i]);
         var collegeType = beautifyWord(jsonOutput.education[eduNo]['cource'], '"') == 'B. Tech' ? 'College' : 'School';
         var stream = beautifyWord(jsonOutput.education[eduNo]['cource'], '"') == 'B. Tech' ? 'Branch' : 'Stream';
         var streamTYpe;
-        if(beautifyWord(jsonOutput.education[eduNo]['cource'], '"') == 'B. Tech') {
+        if (beautifyWord(jsonOutput.education[eduNo]['cource'], '"') == 'B. Tech') {
             streamTYpe = `<p><b>${stream}</b> ${jsonOutput.education[eduNo]['branch']}</p>`;
         } else {
-            if(beautifyWord(jsonOutput.education[eduNo]['cource'], '"') == 'Intermediate (12th)') {
+            if (beautifyWord(jsonOutput.education[eduNo]['cource'], '"') == 'Intermediate (12th)') {
                 streamTYpe = `<p><b>${stream}</b> ${jsonOutput.education[eduNo]['branch']}</p>`;
             } else {
                 streamTYpe = '';
@@ -219,8 +233,8 @@ function education(jsonOutput) {
             </div>
         </div>`;
 
-        document.querySelector("#edu-grid").insertAdjacentHTML("beforeend", getEduOutput);        
-    }    
+        document.querySelector("#edu-grid").insertAdjacentHTML("beforeend", getEduOutput);
+    }
 }
 
 // SUMMER INTERNSHIP
@@ -239,7 +253,7 @@ function intership(jsonOutput) {
     var getInternOutput = "";
 
 
-    for(let i = 0; i < Object.keys(jsonOutput.summer_intership).length; i++) {
+    for (let i = 0; i < Object.keys(jsonOutput.summer_intership).length; i++) {
         var intern = String(Object.keys(jsonOutput.summer_intership)[i]);
         getInternOutput = `
         <div class="avatar">
@@ -261,8 +275,8 @@ function intership(jsonOutput) {
             </div>
         </div>`;
 
-    document.querySelector("#intership-grid").insertAdjacentHTML("beforeend", getInternOutput);        
-    }    
+        document.querySelector("#intership-grid").insertAdjacentHTML("beforeend", getInternOutput);
+    }
 }
 
 // CERTIFICATION
@@ -280,7 +294,7 @@ function certification(jsonOutput) {
     document.querySelector("#certification").innerHTML = certiOutput;
     var getCertiOutput = "";
 
-    for(let certificate of jsonOutput.certification) {
+    for (let certificate of jsonOutput.certification) {
         getCertiOutput = `
         <div class="avatar">
             <img src=${certificate['image']} alt=${certificate['type']}>
@@ -295,9 +309,9 @@ function certification(jsonOutput) {
             <div class="notification-content edu-content">
                 <p>${certificate['description']}</p>
             </div>
-        </div>`;        
+        </div>`;
 
-        document.querySelector("#certification-grid").insertAdjacentHTML("beforeend", getCertiOutput); 
+        document.querySelector("#certification-grid").insertAdjacentHTML("beforeend", getCertiOutput);
     }
 }
 
@@ -314,14 +328,14 @@ function workExperience(jsonOutput) {
             <div class="notification-grid" id="work_experience"></div>
         </section>`;
     document.querySelector("#work_expe").innerHTML = workExpeOutput;
-    let getCompOutput = "";    
+    let getCompOutput = "";
 
-    for(let i = 0; i < Object.keys(jsonOutput.work_experience).length; i++) {
+    for (let i = 0; i < Object.keys(jsonOutput.work_experience).length; i++) {
         var work = String(Object.keys(jsonOutput.work_experience)[i]);
-        var status = jsonOutput.work_experience[work]['status'] === 'working' ? '<b>Joined IN </b>' : '<b>Worked Year </b>'; 
+        var status = jsonOutput.work_experience[work]['status'] === 'working' ? '<b>Joined IN </b>' : '<b>Worked Year </b>';
         var totalExp = jsonOutput.work_experience[work]['total_exp'] === "currently" ? '<i>tll now</i>' : jsonOutput.work_experience[work]['total_exp'];
 
-        
+
         getCompOutput = `
         <div class="avatar">
             <img src=${jsonOutput.work_experience[work]['image']} alt=${jsonOutput.work_experience[work]['year']}>
@@ -340,9 +354,9 @@ function workExperience(jsonOutput) {
                 <p><b>Technology </b>${jsonOutput.work_experience[work]['technology']}</p>
                 <p><b>Total Experience: </b>${totalExp}</p>
             </div>
-        </div>`; 
+        </div>`;
 
-    document.querySelector("#work_experience").insertAdjacentHTML("beforeend", getCompOutput);           
+        document.querySelector("#work_experience").insertAdjacentHTML("beforeend", getCompOutput);
     }
 }
 
@@ -358,9 +372,9 @@ function projectExperience(jsonOutput) {
 
 
             <div class="notification-grid small-hide" id="project_experience"></div>
-        </section>`;        
+        </section>`;
     document.querySelector("#pro_experience").innerHTML = projectExpeOutput;
-    
+
     let getProOutput = "";
     for (let project of jsonOutput.project_experience) {
         getProOutput = `
@@ -368,8 +382,8 @@ function projectExperience(jsonOutput) {
         <div class="notification-card">
             <p style="color: var(--grey-1);">${project}</p>
         </div>`;
-        document.querySelector("#project_experience").insertAdjacentHTML("beforeend", getProOutput); 
-    }     
+        document.querySelector("#project_experience").insertAdjacentHTML("beforeend", getProOutput);
+    }
 }
 
 // HOBBIES
@@ -399,8 +413,8 @@ function hobbies(jsonOutput) {
                 </div>
             </div> 
         `;
-        document.querySelector("#hobbies-tab").insertAdjacentHTML("beforeend", getHobbieOutput); 
-    }  
+        document.querySelector("#hobbies-tab").insertAdjacentHTML("beforeend", getHobbieOutput);
+    }
 }
 
 // STRENGTH
@@ -430,8 +444,8 @@ function strength(jsonOutput) {
                 </div>
             </div> 
         `;
-        document.querySelector("#strength-tab").insertAdjacentHTML("beforeend", getStrenOutput); 
-    }  
+        document.querySelector("#strength-tab").insertAdjacentHTML("beforeend", getStrenOutput);
+    }
 }
 
 // COMMUNITY ACTIVITYES
@@ -445,22 +459,22 @@ function communitActivities(jsonOutput) {
 
 
             <div class="notification-grid small-hide" id="community-tab"></div>
-        </section>`;      
+        </section>`;
     document.querySelector("#commun-activities").innerHTML = actiOutput;
 
     let getActivityOutput = "";
 
 
-    for(let i = 0; i < Object.keys(jsonOutput.community_activities[0]).length; i++) {
+    for (let i = 0; i < Object.keys(jsonOutput.community_activities[0]).length; i++) {
         var acti = String(Object.keys(jsonOutput.community_activities[0])[i]);
-        
+
         getActivityOutput = `
             <div></div>
             <div class="notification-card">
                 <p style="color: var(--grey-1);">${jsonOutput.community_activities[0][acti]}</p>
             </div>`;
-        document.querySelector("#community-tab").insertAdjacentHTML("beforeend", getActivityOutput); 
-    }  
+        document.querySelector("#community-tab").insertAdjacentHTML("beforeend", getActivityOutput);
+    }
 }
 
 // Operating System
@@ -479,7 +493,7 @@ function operatingSystem(jsonOutput) {
     document.querySelector("#o-system").innerHTML = osOutput;
 
     let getOsOutput = "";
-    for(let operating of jsonOutput.os) {
+    for (let operating of jsonOutput.os) {
         getOsOutput = `
             <div class="inline-block">
                 <div class="tab-card inline-tab">
@@ -490,8 +504,41 @@ function operatingSystem(jsonOutput) {
                 </div>
             </div> 
         `;
-        document.querySelector("#os-tab").insertAdjacentHTML("beforeend", getOsOutput); 
-    }  
+        document.querySelector("#os-tab").insertAdjacentHTML("beforeend", getOsOutput);
+    }
+}
+
+// Functional Skills
+function functionalSkills(jsonOutput) {
+    let osOutput = "";
+    osOutput += `
+        <section class="tab-section mt">
+            <div class="group-header">
+                <div class="group-title">${sentencedCase("functional skills", seprater = " ")} </div>
+            </div>
+
+            <div style="padding: 5px;" id="func-skill"></div>
+        </section>    
+
+    `;
+    document.querySelector("#functional-skills").innerHTML = osOutput;
+
+    let geSkillOutput = "";
+    for (let skill of jsonOutput.functional_skills) {
+        if(skill.show === 'Y') {
+            geSkillOutput = `
+                <div class="inline-block">
+                    <div class="tab-card inline-tab">
+                        <div class="tab-content">
+                            <i class='${skill['class']}'></i>
+                            ${sentencedCase(skill['tech-name'], seprater = " ")}
+                        </div>
+                    </div>
+                </div> 
+            `;
+        }
+        document.querySelector("#func-skill").insertAdjacentHTML("beforeend", geSkillOutput);
+    }
 }
 
 // PERSONAL DETAILS
@@ -505,14 +552,14 @@ function personalDetails(jsonOutput) {
 
 
             <div class="notification-grid small-hide" id="detail-tab"></div>
-        </section>`;      
+        </section>`;
     document.querySelector("#personal-detail").innerHTML = detailOutput;
 
     let getPersonalOutput = "";
 
 
     for (let details of jsonOutput.personal_detail) {
-        
+
         getPersonalOutput = `
             <div></div>
             <div class="notification-card" style="background-color: var(--white-bg);">
@@ -542,8 +589,8 @@ function personalDetails(jsonOutput) {
                     </tbody>
                 </table>            
             </div>`;
-        document.querySelector("#detail-tab").insertAdjacentHTML("beforeend", getPersonalOutput); 
-    }  
+        document.querySelector("#detail-tab").insertAdjacentHTML("beforeend", getPersonalOutput);
+    }
 }
 
 

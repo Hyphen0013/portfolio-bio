@@ -68,7 +68,7 @@
         {
             "project_link": [
                 {
-                    "link": "http://aditya-bio.herokuapp.com/",
+                    "link": "https://hyphen0013.github.io/portfolio-bio/",
                     "describe": "Portfolio (Data stored in JSON and replicate data by JavaScript use of XMLHttpRequest)"
                 },                
                 {
@@ -287,6 +287,34 @@
         {
             "class":"fab fa-git-square",
             "os_type": "(GIT) git version control"
+        }
+    ],
+
+    "functional_skills": [
+        {
+            "class":"fab fa-jira",
+            "tech-name": "jira",
+            "show": "Y"
+        },
+        {
+            "class":"fab fa-bitbucket",
+            "tech-name": "bitbucket",
+            "show": "Y"            
+        },
+        {
+            "class":"fab fa-sourcetree",
+            "tech-name": "source tree",
+            "show": "Y"            
+        },
+        {
+            "class":"fab fa-gitlab",
+            "tech-name": "gitlab",
+            "show": "Y"            
+        },
+        {
+            "class":"fab fa-github",
+            "tech-name": "github",
+            "show": "Y"            
         }
     ],
 

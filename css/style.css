@@ -1,6 +1,5 @@
 body {
     background-color: var(--white-bg);
-    color: var(--color-text5);
     font-family: 'Oswald', sans-serif;
     margin: var(--body-margin);
 }
@@ -328,8 +327,8 @@ p {
 }
 
 /* FONT AWESOME */
-.fa-html5, .fa-windows, .jquery, .fa-database, .fa-graduation-cap, .fa-windows { color: var(--blue-light);}
-.fa-css3-alt, .fa-laravel, .fa-java, .fa-school, .jsp, .fa-git-square, .fa-ubuntu  { color: var(--red);}
+.fa-html5, .fa-windows, .jquery, .fa-database, .fa-graduation-cap, .fa-windows, .fa-jira, .fa-sourcetree, .fa-bitbucket { color: var(--blue-light);}
+.fa-css3-alt, .fa-laravel, .fa-java, .fa-school, .jsp, .fa-git-square, .fa-ubuntu, .fa-gitlab  { color: var(--red);}
 .javascript { color: var(--yellow);}
 
 .internship { color: var(--blue-sky);}
@@ -337,11 +336,9 @@ p {
 .fa-industry { color: var(--grey);}
 .fa-puzzle-piece { color: var(--green);}
 .fa-dumbbell { color: var(--brown);}
-.fa-bell {
-    color: var(--color-text5);
-}
 .fa-address-card {color: var(--green-light);}
 .fa-briefcase {color: var(--cyan);}
+.fa-bitbucket, .fa-github {color: var(--grey);}
 
 /* TABLE */
 
