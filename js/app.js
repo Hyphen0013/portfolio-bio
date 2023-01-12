@@ -31,6 +31,7 @@ http.onload = function () {
         operatingSystem(jsonOutput);
         functionalSkills(jsonOutput);
         personalDetails(jsonOutput);
+        footerDetails(jsonOutput);
     }
 };
 
@@ -591,6 +592,45 @@ function personalDetails(jsonOutput) {
             </div>`;
         document.querySelector("#detail-tab").insertAdjacentHTML("beforeend", getPersonalOutput);
     }
+}
+
+// FOOTER DETAILS
+function footerDetails(jsonOutput) {
+    let footerOutput = "";
+    footerOutput += `
+        <div class="login_footer">
+            <div class="login_links">
+                <ul>`;
+
+                for(let site of jsonOutput.social_site) {
+                    if(site.display == "Y" && site.social_site == "Y") {
+                        if(site.image) {
+                            image = site.image.split("images/");
+                            image = "../images/" + image[1];
+                        }
+                        icon = site.fa_icon ? '<i class="'+ site.fa_icon +'"></i>' : '<img style="height: 20px;" src="'+ image + '" />';
+                        email = site.email;                                                
+                        socialSiteName = site.site;  
+
+                        footerOutput += 
+                        `<li>
+                            ${icon}
+                            <a href="javascript:void(0)">${email.toUpperCase()}</a>
+                        </li>`;
+                    }
+                }
+
+                footerOutput += 
+                `</ul>
+            </div>
+            <div class="login_copyright">
+                <span class="copyright"></span> ${jsonOutput.name.toUpperCase()}
+            </div>
+        </div>    
+    `;
+    document.querySelector("#footer-detail").innerHTML = footerOutput;
+
+    let getPersonalOutput = "";
 }
 
 

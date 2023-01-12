@@ -365,6 +365,7 @@
     "social_site": [
         {
             "site": "Gmail",
+            "social_site": "Y",
             "display": "Y",
             "fa_icon": "fas fa-envelope-square",
             "username": "Aditya Kumar",
@@ -374,6 +375,7 @@
         },
         {
             "site": "Mobile No",
+            "social_site": "N",
             "display": "Y",
             "fa_icon": "fas fa-mobile-alt",
             "username": "Mobile Number",
@@ -383,6 +385,7 @@
         },        
         {
             "site": "Address",
+            "social_site": "N",
             "display": "Y",
             "fa_icon": "fa fa-map-marker",
             "username": "Permanent Address",
@@ -392,6 +395,7 @@
         },        
         {
             "site": "LinkedIn",
+            "social_site": "Y",
             "display": "Y",
             "fa_icon": "fab fa-linkedin-in",
             "username": "Aditya (Rocky) -",
@@ -401,6 +405,7 @@
         },
         {
             "site": "Twitter",
+            "social_site": "Y",
             "display": "Y",
             "fa_icon": "fab fa-twitter",
             "username": "Aditya",
@@ -410,6 +415,7 @@
         },
         {
             "site": "Facebook",
+            "social_site": "Y",
             "display": "N",
             "fa_icon": "fab fa-facebook",
             "username": "Rocky Kr",
@@ -419,6 +425,7 @@
         },
         {
             "site": "Github",
+            "social_site": "Y",
             "display": "Y",
             "fa_icon": "fab fa-github",
             "username": "digyspab",
@@ -428,6 +435,7 @@
         },
         {
             "site": "KOO",
+            "social_site": "Y",
             "display": "Y",
             "image": "./images/koo.svg",
             "username": "Aditya",

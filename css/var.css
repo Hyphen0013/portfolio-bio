@@ -8,7 +8,9 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Roboto Mono', monospace;
 *************************************************/
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200;600;900&family=Lato:wght@100;300;400&family=Merriweather:wght@300;400;900&family=Raleway:wght@100;200;300&family=Roboto+Mono:wght@300;700&family=Roboto:wght@100;300;400;900&display=swap');
-
+html {
+  scroll-behavior: smooth;
+}
 :root {
     --mid-container: 950px;
     --avtar-size: 60px;
@@ -30,6 +32,7 @@ font-family: 'Roboto Mono', monospace;
     --tab-profile-card-content: 12px;
     --tab-profile-card-heght: 10.1rem;
     --profile-card-icon: 5rem;
+    --tab-margin-slider: 2rem 2rem 0 2rem;
 }
 
 html  {
