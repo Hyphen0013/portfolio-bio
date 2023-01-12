@@ -3,19 +3,19 @@ const projectArr = [
         id: "modalid1",
         projectName: "nigyroom",
         popupBtn: "Click here",
-        image: "../images/bg-image/work1.jpg",
-        image2: "../images/logo.png",
+        image: "./images/bg-image/work1.jpg",
+        image2: "./images/logo.png",
         iframeImage: {
             image1: {
-                image: "/images/internship.png",
+                image: "./images/internship.png",
                 description: "First Page",
             },
             image2: {
-                image: "/images/organization.png",
+                image: "./images/organization.png",
                 description: "Second Page",
             },
             image3: {
-                image:  "/images/prolitus.png",
+                image:  "./images/prolitus.png",
                 description: "Third Page",
             },
         },        
@@ -25,19 +25,19 @@ const projectArr = [
         id: "modalid2",
         projectName: "resume",
         popupBtn: "Check out",
-        image: "/images/bg-image/work2.jpg",
-        image2: "/images/koo.svg",
+        image: "./images/bg-image/work2.jpg",
+        image2: "./images/koo.svg",
         iframeImage: {
             image1: {
-                image: "/images/programming/api.png",
+                image: "./images/programming/api.png",
                 description: "Check 1 Page",
             },
             image2: {
-                image: "/images/programming/CSS.png",
+                image: "./images/programming/CSS.png",
                 description: "check 2 Page",
             },
             image3: {
-                image:  "/images/programming/html.png",
+                image:  "./images/programming/html.png",
                 description: "check 3 Page",
             },
         },         
@@ -47,19 +47,19 @@ const projectArr = [
         id: "modalid3",
         projectName: "static website",
         popupBtn: "Check website",
-        image: "/images/bg-image/work3.jpg",
-        image2: "/images/6.jpg",
+        image: "./images/bg-image/work3.jpg",
+        image2: "./images/6.jpg",
         iframeImage: {
             image1: {
-                image: "/images/bg-image/work1.jpg",
+                image: "./images/bg-image/work1.jpg",
                 description: "Example 1 Page",
             },
             image2: {
-                image: "/images/bg-image/work3.jpg",
+                image: "./images/bg-image/work3.jpg",
                 description: "Example 2 Page",
             },
             image3: {
-                image: "/images/bg-image/work2.jpg",
+                image: "./images/bg-image/work2.jpg",
                 description: "Example 3 Page. This page is belongs to renter where you can list all the renter and on click on them it open details of the rent related to monts.",
             },
         },         
