@@ -3,8 +3,8 @@ const projectArr = [
         id: "modalid1",
         projectName: "nigyroom",
         popupBtn: "Click here",
-        image: "/images/bg-image/work1.jpg",
-        image2: "/images/logo.png",
+        image: "../images/bg-image/work1.jpg",
+        image2: "../images/logo.png",
         iframeImage: {
             image1: {
                 image: "/images/internship.png",
