@@ -67,7 +67,45 @@ const projectArr = [
     }
 ]
 
-function showProjectSlider() {
+let userStatusArr = [
+    {
+        id: 1,
+        image: {
+            image1: "./images/img/2017-02-07-13-17-58-217.jpg",
+            image2: "./images/img/2017-03-30-13-18-42-342.jpg",
+            image3: "./images/img/2017-03-30-13-21-04-074.jpg",
+        }
+    },
+    {
+        id: 2,
+        image: {
+            image1: "./images/img/IMG_20160421_083429.jpg",
+            image2: "./images/img/IMG_20170419_163354.jpg",
+            image3: "./images/img/IMG_20170419_163457.jpg",
+        }
+    },
+    {
+        id: 3,
+        image: {
+            image1: "./images/img/IMG_20170921_114815054.jpg",
+            image2: "./images/img/IMG_20170921_114901734.jpg",
+            image3: "./images/img/IMG_20170921_115046196.jpg",
+        }
+    },
+    {
+        id: 4,
+        image: {
+            image1: "./images/img/IMG_20180318_211022.jpg",
+            image2: "./images/img/IMG_20180318_212510.jpg",
+            image3: "./images/img/selfiecamera_2016-04-23-14-32-16-041.jpg",
+        }
+    }
+]
+
+/**
+ * PROJECTS SLIDER
+ */
+function projectSlider() {
     var frameIdArr = [];
 
     let projectsOutput = "";
@@ -93,7 +131,7 @@ function showProjectSlider() {
                 <img src="${projectArr[i].image2}" alt="" class="card_grid-avtar">
                 <p class="card_grid-p">
                     <span>${returnFormattedPara(projectArr[i].description)}</span>
-                    <a href="javascript:void(0)" data-li="example" class="login_btn" id="${projectArr[i].id}" data-url="#" data-height="650px" data-width="100%" data-placement="top">${projectArr[i].popupBtn}</a>
+                    <a href="javascript:void(0)" data-li="example" class="login_btn" id="${projectArr[i].id}" data-url="#"  data-project="650px" data-width="100%" data-placement="top">${projectArr[i].popupBtn}</a>
                 </p>
             </li>`;
     }
@@ -104,9 +142,9 @@ function showProjectSlider() {
     document.addEventListener('click', checkFrameBtnClick);
     let framePopup = "";
     function checkFrameBtnClick(e) {
-        var frameHeight = e.target.getAttribute('data-height');
-
-        if(e.target.getAttribute('data-height') != null) {
+        
+        if(e.target.getAttribute('data-project') != null) {
+            var frameHeight = e.target.getAttribute('data-project');
             var filterArr = projectArr.filter((value, index) => {
                 return value.id === e.target.id;
             });
@@ -117,25 +155,21 @@ function showProjectSlider() {
                     <div class="modal_close-btn">
                         <a href="#close" class="close">&times;</a>
                     </div>
-    
                     <div class="modal_iframe-slider">
                         <ul id="adaptive-frame">`;
+                            for(let i = 0; i < Object.keys(filterArr[0].iframeImage).length; i++) {
+                                let frameImage = Object.keys(filterArr[0].iframeImage)[i];
 
-                        for(let i = 0; i < Object.keys(filterArr[0].iframeImage).length; i++) {
-                            let frameImage = Object.keys(filterArr[0].iframeImage)[i];
-
-                            framePopup +=`
-                                <li class="card_grid-slider">
-                                    <img class="card_grid-img" src="${filterArr[0].iframeImage[frameImage]['image']}" />
-                                    <h3 class="text_border-shadow" style="opacity: 0.6; width: fit-content;">${returnFormattedPara(sentencedCase(filterArr[0].projectName, seprater = " "))}</h3>
-                                    <p>${returnFormattedPara(filterArr[0].iframeImage[frameImage]['description'])}</p> 
-                                </li>`;                            
-                        }
-
-
-                        framePopup +=`</ul>             
+                                framePopup +=`
+                                    <li class="card_grid-slider">
+                                        <img class="card_grid-img" src="${filterArr[0].iframeImage[frameImage]['image']}" />
+                                        <h3 class="text_border-shadow" style="opacity: 0.6; width: fit-content;">${returnFormattedPara(sentencedCase(filterArr[0].projectName, seprater = " "))}</h3>
+                                        <p>${returnFormattedPara(filterArr[0].iframeImage[frameImage]['description'])}</p> 
+                                    </li>`;                            
+                            }
+                            framePopup +=
+                        `</ul>             
                     </div>
-    
                 </div>
             </div>`;
             document.querySelector("body").insertAdjacentHTML("beforeend", framePopup);  
@@ -192,8 +226,121 @@ function showProjectSlider() {
         verticalHeight:500,    
         enableDrag: false,    
     });      
-       
-    
 }
+
+       
+/**
+ * USER STATUS
+ */
+
+function userStatusChange() {
+    let userId = [];
+    let usersOutput = "";
+    usersOutput += `
+    <section class="tab-section-slider">
+        <div class="group-header">
+            <div class="group-title">${sentencedCase("Status", seprater = " ")}</div>
+        </div>
+    </section>
+    <div id="userslider-tab"></div>`;  
+
+    document.querySelector("#user-slider").innerHTML = usersOutput;
+
+    let userSlider = "";
+    
+    userSlider = `<ul id="responsive-tab" class="cs-hidden ul-light-slider">`;
+
+    for(let i = 0; i < userStatusArr.length; i++) {
+        userId.push(userStatusArr[i].id);
+
+        userSlider += `
+            <li class="card_grid" style="position: relative; height: 300px; align-items: center;">
+                <img class="card_grid-img" src="${userStatusArr[i].image.image1}" />
+                <a href="javascript:void(0)" style="position: relative; height: 300px; align-items: center; cursor: default;" data-li="example" id="${userStatusArr[i].id}" data-url="#" data-height="650px" data-width="100%" data-placement="top">
+                    <img style="border: 6px solid rgba(255, 255, 255, .3); cursor: pointer;" src="./images/logo.png" alt="" class="card_grid-avtar">
+                </a>
+            </li>`;
+    }
+    document.querySelector("#userslider-tab").insertAdjacentHTML("beforeend", userSlider);    
+    userSlider += `</ul>`;
+
+    // userStatus FramePopup
+    document.addEventListener('click', checkUserStatusClick);
+
+    function checkUserStatusClick(e) {
+        if(e.target.parentElement.getAttribute('data-li') != null) {
+
+            var filterUserImage = userStatusArr.filter((value, index) => {
+                return value.id == e.target.parentElement.id;
+            });
+            
+            let userPopup = "";
+            userPopup = `
+                <div id="frameModal" class="modal">
+                    <div class="modal-content m-custom" style="height: 600px;">
+                        <div class="modal_iframe-slider" style="height: inherit; padding: 0px;">
+                            <div data-change="change_status" class="status_slide" id="change_status" style="padding: 0px;">
+                                <div class="status_slide-items" style="border-radius: 0;">`;
+                                for(let i = 0; i < Object.keys(filterUserImage[0].image).length; i++) {
+                                    let imageKey = Object.keys(filterUserImage[0].image)[i];
+
+                                    userPopup +=
+                                    `<div>
+                                        <img src="${filterUserImage[0].image[imageKey]}" alt="">
+                                    </div>`;                                    
+                                }                                
+                                userPopup +=
+                                `</div>
+                                <div class="user_status-back">
+                                    <a href="javascript:void(0);" class="close" style="background: none;">
+                                        <i class="fas fa-arrow-left"></i>
+                                    </a>
+                                </div>                                
+                                <nav class="status_slide-nav">
+                                    <div class="status_slide-thumb"></div>
+                                    <button class="slide_prev">Prev</button>
+                                    <button class="slide_next">Next</button>
+                                </nav>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>`;
+                document.querySelector("body").insertAdjacentHTML("beforeend", userPopup);  
+
+                // new SliderShow('status_slide');
+                let test = new SliderShow('status_slide');
+                test.prev();
+            // Some delay to open iframe
+            setInterval(() => {
+                $('#frameModal').show();
+            }, 10);
+        }
+        // On click each slider id open frame
+        userId.forEach(function (id) {
+            $('#' + id).on('click', function (e) {
+                $('#frameModal').show();
+            });
+            $('.close').on('click', function () {
+                $('#frameModal').remove();
+            });
+        });
+    }
+    // On click each slider id open frame
+    userId.forEach(function (id) {
+        $('#' + id).on('click', function (e) {
+            $('#frameModal').show();
+        });
+        $('.close').on('click', function () {
+            $('#frameModal').remove();
+        });
+    });
+}
+
+function showProjectSlider() {
+    projectSlider();
+    userStatusChange();
+}
+
 showProjectSlider();
 

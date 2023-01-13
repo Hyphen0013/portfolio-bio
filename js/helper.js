@@ -127,7 +127,7 @@ function getMonth(val) {
 getMonth(getmonth.toString());
 
 var modal = document.getElementById("myModal");
-var frameId = [
+/* var frameId = [
     'myBtn'
 ];
 
@@ -143,7 +143,7 @@ frameId.forEach(function (id) {
     $('.close').on('click', function () {
         $('#myModal').hide();
     });
-});
+}); */
 
 // When the user clicks anywhere outside of the modal, close it
 // window.onclick = function (event) {
@@ -190,7 +190,6 @@ $(document).ready(function () {
     
     if(width <= '767') {
         item = 1;
-        console.log(width)
     } else {
         item = 2;
     }
@@ -231,3 +230,66 @@ function returnFormattedPara(paragraph) {
 
     return formtPara.join(" ");
 } 
+
+/***
+ * FUNCTIONALITY HANDLE BY THE PROTYPE CHAINING METHOD
+ * */
+function SliderShow(id) { // Constructor
+    this.slide = document.querySelector(`[data-slide="${id}"]`)
+    this.active = 0;
+    this.init();
+    this.autoSlide();
+};
+
+SliderShow.prototype.activeSlide = function (index) {
+    this.active = index;
+    this.items.forEach((item) => item.classList.remove("active"));
+    this.items[index].classList.add('active');
+    this.thumbItems.forEach((item) => item.classList.remove("active"));
+    this.thumbItems[index].classList.add('active');
+}
+
+SliderShow.prototype.prev = function () {
+    if (this.active > 0) {
+        this.activeSlide(this.active - 1);
+    } else {
+        this.activeSlide(this.items.length - 1);
+    }
+}
+
+SliderShow.prototype.next = function () {
+    if (this.active < this.items.length - 1) {
+        this.activeSlide(this.active + 1);
+    } else {
+        this.activeSlide(0);
+    }
+}
+
+SliderShow.prototype.addNavigation = function () {
+    const nextBtn = document.querySelector(".slide_next");
+    const prevBtn = document.querySelector(".slide_prev");
+    nextBtn.addEventListener('click', this.next)
+    prevBtn.addEventListener('click', this.prev)
+}
+
+SliderShow.prototype.addThumbItems = function () {
+    this.items.forEach(() => (this.thumb.innerHTML += "<span></span>"));
+    this.thumbItems = Array.from(this.thumb.children);
+}
+
+SliderShow.prototype.autoSlide = function () {
+    clearTimeout(this.timeout);
+    this.timeout = setTimeout(this.next, 5000);
+}
+
+SliderShow.prototype.init = function () {
+    this.next = this.next.bind(this);
+    this.prev = this.prev.bind(this);
+    this.items = document.querySelectorAll(".status_slide-items > *");
+    this.thumb = document.querySelector(".status_slide-thumb");
+    this.addThumbItems();
+    this.activeSlide(0);
+    this.addNavigation();
+}
+
+// new SliderShow('status_slide');

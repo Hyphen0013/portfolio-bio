@@ -24,7 +24,11 @@
 
 <body>
     <div class="tab-group" id="profile-detail" ></div>    
-    <div class="tab-group" id="technical"></div>    
+    <div class="tab-group" id="technical"></div>   
+    
+    <!-- STATUS -->
+    <div class="tab-group" id="user-slider"></div>
+    <!-- STATUS END-->
     
     <div class="group" id="education"></div>    
     <div class="group" id="intership"></div>    
@@ -42,6 +46,7 @@
     <div class="tab-group" id="functional-skills"></div> 
     <div class="tab-group" id="personal-detail"></div> 
     <div class="tab-group" id="footer-detail"></div> 
+
 
 <!-- The Modal -->
 <!-- <div id="myModal" class="modal">
@@ -107,6 +112,33 @@
             // console.log($(theText));
         }
 
+        $('#responsive-tab').lightSlider({
+            item: 4,
+            loop: false,
+            slideMove: 2,
+            easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+            onSliderLoad: function() {
+                $('#responsive-tab').removeClass('cS-hidden');
+            },                
+            responsive: [
+                {
+                    breakpoint: 800,
+                    settings: {
+                        item: 3,
+                        slideMove: 1,
+                        slideMargin: 6,
+                        
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        item: 2,
+                        slideMove: 1
+                    }
+                }
+            ]
+        });       
     </script>  
 </body>
 
