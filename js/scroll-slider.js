@@ -308,9 +308,7 @@ function userStatusChange() {
                 </div>`;
                 document.querySelector("body").insertAdjacentHTML("beforeend", userPopup);  
 
-                // new SliderShow('status_slide');
-                let test = new SliderShow('status_slide');
-                test.prev();
+                new SliderShow('status_slide');
             // Some delay to open iframe
             setInterval(() => {
                 $('#frameModal').show();

@@ -606,7 +606,7 @@ function footerDetails(jsonOutput) {
                     if(site.display == "Y" && site.social_site == "Y") {
                         if(site.image) {
                             image = site.image.split("images/");
-                            image = "../images/" + image[1];
+                            image = "./images/" + image[1];
                         }
                         icon = site.fa_icon ? '<i class="'+ site.fa_icon +'"></i>' : '<img style="height: 20px;" src="'+ image + '" />';
                         email = site.email;                                                
