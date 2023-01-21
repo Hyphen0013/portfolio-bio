@@ -2,68 +2,132 @@ const projectArr = [
     {
         id: "modalid1",
         projectName: "nigyroom",
-        popupBtn: "Click here",
-        image: "./images/bg-image/work1.jpg",
+        popupBtn: "Open Nigyroom",
+        image: "./images/project/frontend/front_simle_login.png",
         image2: "./images/logo.png",
         iframeImage: {
             image1: {
-                image: "./images/internship.png",
-                description: "First Page",
+                image: "./images/project/frontend/1_signup-owner.png",
+                description: "Signup page login as Renter/Owner",
             },
             image2: {
-                image: "./images/organization.png",
-                description: "Second Page",
+                image: "./images/project/frontend/front_simle_login.png",
+                description: "Login page by simple username or password and with social site also",
             },
             image3: {
-                image:  "./images/prolitus.png",
+                image: "./images/project/frontend/2_login_blocked.png",
+                description: "Login page with some validation show",
+            },
+            image4: {
+                image:  "./images/project/frontend/4_dashboard.png",
+                description: "Owner Dashboard page",
+            },
+            image5: {
+                image:  "./images/project/frontend/5_add_house.png",
+                description: "Add multiple house with single owner",
+            },
+            image6: {
+                image:  "./images/project/frontend/6_list_all_house.png",
                 description: "Third Page",
+            },
+            image7: {
+                image:  "./images/project/frontend/7_house_detail.png",
+                description: "List of house details",
+            },
+            image8: {
+                image:  "./images/project/frontend/8_add_rooms.png",
+                description: "Add multiple rooms of multiple house and filter with house with added rooms",
+            },
+            image9: {
+                image:  "./images/project/frontend/9_list_of_rooms.png",
+                description: "Rooms listing / Many project images are not included. This project has many features like search houes, friends comment on house like features and many more.",
             },
         },        
         description: "Hi i am Aditya"
     },
     {
         id: "modalid2",
-        projectName: "resume",
-        popupBtn: "Check out",
-        image: "./images/bg-image/work2.jpg",
+        projectName: "portfolio",
+        popupBtn: "Open Portfolio",
+        image: "./images/project/1.l_res_top.png",
         image2: "./images/koo.svg",
         iframeImage: {
             image1: {
-                image: "./images/programming/api.png",
-                description: "Check 1 Page",
+                image: "./images/project/1.l_res_top.png",
+                description: "On top Resume button. By click on button new Resume page is open. Status section for status slider. Click on middle image to open Frame",
             },
             image2: {
-                image: "./images/programming/CSS.png",
-                description: "check 2 Page",
+                image: "./images/project/2.l_res_educat.png",
+                description: "",
             },
             image3: {
-                image:  "./images/programming/html.png",
-                description: "check 3 Page",
+                image:  "./images/project/3.l_res_project.png",
+                description: "Project slider. On click button it open the frame where you can slide right or left",
+            },
+            image4: {
+                image:  "./images/project/4.l_res_footer.png",
+                description: "Footer section with details",
+            },
+            image5: {
+                image:  "./images/project/5.l_res_status.png",
+                description: "Status section on click on middle of the image (center round image) it open the frame. Click on left and right of the image for sliding. For close click bottom red arrow. Status has slide for all image.",
+            },
+            image6: {
+                image:  "./images/project/6.l_res_project.png",
+                description: "After click on resume button. Resume HTML page open form where you can save as PDF file",
+            },
+            image7: {
+                image:  "./images/project/7.l_res_project.png",
+                description: "After click on Print Resume button.",
+            },
+            image8: {
+                image:  "./images/project/8.m_res_project.png",
+                description: "Mobile View",
+            },
+            image9: {
+                image:  "./images/project/9.m_res_project.png",
+                description: "Mobile View",
+            },
+            image10: {
+                image:  "./images/project/10.m_res_project.png",
+                description: "Mobile View",
+            },
+            image10: {
+                image:  "./images/project/11.m_res_project.png",
+                description: "Mobile View",
+            },
+            image10: {
+                image:  "./images/project/12.l_res_project_frame.png",
+                description: "Project Frame Slider",
             },
         },         
-        description: "I am Rocky, currently i'm working in GDI India"
+        description: "This is my portfolio. On top click on resume button for save resume as pdf."
     },
     {
         id: "modalid3",
-        projectName: "static website",
-        popupBtn: "Check website",
-        image: "./images/bg-image/work3.jpg",
+        projectName: "search engine",
+        popupBtn: "Open Frame",
+        image: "./images/project/1.l_search 12-40-45.png",
         image2: "./images/6.jpg",
         iframeImage: {
             image1: {
-                image: "./images/bg-image/work1.jpg",
+                image: "./images/project/1.l_search 12-40-45.png",
                 description: "Example 1 Page",
             },
             image2: {
-                image: "./images/bg-image/work3.jpg",
+                image: "./images/project/2.l_search_output.png",
                 description: "Example 2 Page",
             },
             image3: {
-                image: "./images/bg-image/work2.jpg",
-                description: "Example 3 Page. This page is belongs to renter where you can list all the renter and on click on them it open details of the rent related to monts.",
+                image: "./images/project/3.l_search_div.png",
+                description: "monts.",
+            },
+            image4: {
+                image: "./images/project/4.l_search_image_div.png",
+                description: "monts.",
             },
         },         
-        description: "Room rent website. Log history of all renters"
+        description: "Simple search engine. On scroll down new div open."
     }
 ]
 
@@ -125,12 +189,12 @@ function projectSlider() {
     for(let i = 0; i < projectArr.length; i++) {
         frameIdArr.push(projectArr[i].id);
         prjectSliderOutput += `
-            <li class="card_grid" style="position: relative;">
-                <img class="card_grid-img" src="${projectArr[i].image}" />
-                <h3 class="text_border-shadow" style="opacity: 0.6; width: fit-content; position: absolute;">${returnFormattedPara(sentencedCase(projectArr[i].projectName, seprater = " "))}</h3>
+            <li class="card_grid" style="position: relative; background-color: #000;">
+                <img class="card_grid-img opacity-4" src="${projectArr[i].image}" />
+                <h3 class="text_border-shadow color-white" style="width: fit-content; position: absolute;">${returnFormattedPara(sentencedCase(projectArr[i].projectName, seprater = " "))}</h3>
                 <img src="${projectArr[i].image2}" alt="" class="card_grid-avtar">
-                <p class="card_grid-p">
-                    <span>${returnFormattedPara(projectArr[i].description)}</span>
+                <p class="card_grid-p" style="align-items: flex-end;">
+                    <span class="color-white" style="line-height: 1.7rem;">${returnFormattedPara(projectArr[i].description)}</span>
                     <a href="javascript:void(0)" data-li="example" class="login_btn" id="${projectArr[i].id}" data-url="#"  data-project="650px" data-width="100%" data-placement="top">${projectArr[i].popupBtn}</a>
                 </p>
             </li>`;
@@ -161,10 +225,9 @@ function projectSlider() {
                                 let frameImage = Object.keys(filterArr[0].iframeImage)[i];
 
                                 framePopup +=`
-                                    <li class="card_grid-slider">
-                                        <img class="card_grid-img" src="${filterArr[0].iframeImage[frameImage]['image']}" />
-                                        <h3 class="text_border-shadow" style="opacity: 0.6; width: fit-content;">${returnFormattedPara(sentencedCase(filterArr[0].projectName, seprater = " "))}</h3>
-                                        <p>${returnFormattedPara(filterArr[0].iframeImage[frameImage]['description'])}</p> 
+                                    <li class="card_grid-slider" style="background-color: #000;">
+                                        <img class="card_grid-img" src="${filterArr[0].iframeImage[frameImage]['image']}" style="opacity: 0.8;"/>
+                                        <p style="margin-top: 3rem; color: white; font-weight: 600;">${returnFormattedPara(filterArr[0].iframeImage[frameImage]['description'])}</p> 
                                     </li>`;                            
                             }
                             framePopup +=

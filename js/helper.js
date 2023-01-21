@@ -26,6 +26,22 @@ function beautifyWord(word, seprater) {
     }
 }
 
+/***
+ * Filter words
+ * FORMATE WITH MODIFICATIONS
+ */
+function filterWordsAndModify(wordMatch, paragraph) {
+    var convertArr = new Array();
+    convertArr[0] = paragraph;
+    const matchEl = convertArr.map((place) => {
+        const regX = new RegExp(wordMatch, "gi");
+        const word = place.replace(regX, `<code style="font-weight: 600; word-spacing: -4px;">${wordMatch}</code>`);
+
+        return `<p class="class="main_sub-header font-p">${word}</p>`;
+    }).join("");
+    return matchEl;
+}
+
 // Total Years and Months
 function monthDiff(dateFrom, dateTo) {
     var totalMonths = dateTo.getMonth() - dateFrom.getMonth() + (12 * (dateTo.getFullYear() - dateFrom.getFullYear()))
@@ -190,6 +206,7 @@ $(document).ready(function () {
     
     if(width <= '767') {
         item = 1;
+        console.log(width)
     } else {
         item = 2;
     }
@@ -224,11 +241,15 @@ $(document).ready(function () {
  * FORMATED PARAGRAPH
  */
 function returnFormattedPara(paragraph) {
-    var formtPara = paragraph.split(" ").map((value, index) => {
-        return `<span class="style_para style_para-bg">${value}</span>`;
-    });
+    if(paragraph != "") {
+        var formtPara = paragraph.split(" ").map((value, index) => {
+            return `<span class="style_para style_para-bg">${value}</span>`;
+        });
+        return formtPara.join(" ");
+    } else {
+        return "";
+    }
 
-    return formtPara.join(" ");
 } 
 
 /***
@@ -238,7 +259,6 @@ function SliderShow(id) { // Constructor
     this.slide = document.querySelector(`[data-slide="${id}"]`)
     this.active = 0;
     this.init();
-    this.autoSlide();
 };
 
 SliderShow.prototype.activeSlide = function (index) {
@@ -247,6 +267,7 @@ SliderShow.prototype.activeSlide = function (index) {
     this.items[index].classList.add('active');
     this.thumbItems.forEach((item) => item.classList.remove("active"));
     this.thumbItems[index].classList.add('active');
+    this.autoSlide();
 }
 
 SliderShow.prototype.prev = function () {
@@ -280,6 +301,16 @@ SliderShow.prototype.addThumbItems = function () {
 SliderShow.prototype.autoSlide = function () {
     clearTimeout(this.timeout);
     this.timeout = setTimeout(this.next, 5000);
+}
+
+SliderShow.prototype.mouseMove = function() {
+    const nextBtn = document.querySelector(".slide_next");
+    const prevBtn = document.querySelector(".slide_prev");
+    nextBtn.addEventListener('mousemove', function() {
+        console.log('chek');
+        clearTimeout(this.timeout);
+        this.timeout = setTimeout(this.next, 5000);        
+    });
 }
 
 SliderShow.prototype.init = function () {

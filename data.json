@@ -2,7 +2,7 @@
     "name": "Aditya",
     "nic_name": "Rocky",
     "image": "./images/img/Aditya Image.jpg",
-    "overall_experience": "3+ Years",
+    "overall_experience": "3.5+ Years",
     "current_profile": "Associate Software Engineer",
 
     "detail": [
@@ -55,7 +55,7 @@
     },
 
     "career_object": {
-        "header_description": "Innovative, task-driven professional with 3+ years of experience in web design and development accross product and service base industries. Work as full stack developer with front UI design as well as backend development. Make API in (Laravel) and Webservice in (Java) with unit testing and good knowledge in code debugging simple/complex issues, and implementing new features based on user feedback and good hand in JavaScript with testing",
+        "header_description": "Innovative, task-driven professional with 3 years and 5 Months of experience in web design and development accross product and service base industries. Work as full stack developer with front UI design as well as backend development. Make API in (Laravel) and Webservice in (Java) with unit testing and good knowledge in code debugging simple/complex issues, and implementing new features based on user feedback and good hand in JavaScript with testing",
         "description": "To be a part of dynamic and challenging organization that will help in effective utilization and enhancement of my skills toward the achievement of self and organizational objectives.",
         "points": "Project management, Code validation skills, Team leadership"
     },
@@ -72,9 +72,13 @@
                     "describe": "Portfolio (Data stored in JSON and replicate data by JavaScript use of XMLHttpRequest)"
                 },                
                 {
+                    "link": "Nigyroom",
+                    "describe": "This project has many features. Login as backend user / front-end user. Backend user who manage the website. Project has login feature with social site, simple login, email verification, search user/house, like feature, rate the house and add as friend and many more."
+                },                  
+                {
                     "link": "https://hy-search-engine.herokuapp.com/",
                     "describe": "Search engine! Made in express (NodeJS) and template ejs. You can search people and get details of the person. Scroll bottom to load more data in dashboard page"
-                },                
+                },                              
                 {
                     "link": "http://honeybug.herokuapp.com/",
                     "describe": "Static Website (Use Express - NodeJS for dynamic route)"
