@@ -446,6 +446,16 @@
             "email": "@aditya813068",
             "link_display": "Y",
             "link": "https://www.kooapp.com/profile/aditya813068"
+        },
+        {
+            "site": "Skype",
+            "social_site": "Y",
+            "display": "Y",
+            "fa_icon": "fab fa-skype",
+            "username": "Aditya",
+            "email": "digyspab@gmail.com",
+            "link_display": "Y",
+            "link": "digyspab@gmail.com"
         }
     ]
 }
