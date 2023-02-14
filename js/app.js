@@ -153,6 +153,8 @@ function profileDetail(jsonOutput) {
 // TECHNICAL SKIL
 function technicalSkills(jsonOutput) {
     let techOutput = "";
+    let checkImage;
+    let styleImg;
     techOutput += `
         <section class="tab-section mt">
             <div class="group-header">
@@ -167,11 +169,22 @@ function technicalSkills(jsonOutput) {
 
     let getProOutput = "";
     for (let programming of jsonOutput.programming) {
+        if(programming.image.includes("react.png")) {
+            styleImg = "height: 14px; width: 26px;";
+        } else if(programming.image.includes("spring-boot.png")) {
+            styleImg = "height: 14px; width: 60px;";
+        } else if(programming.image.includes("JSP.png")) {
+            styleImg = "height: 14px; width: 20px;";
+        } else {
+            styleImg = "height: 14px; width: 14px;";
+        }
+        
+        checkImage = programming.check_img === "Y" ? `<img src='${programming.image}' style='${styleImg}' />` : `<i class='${programming.class}'></i>`;
         getProOutput = `
             <div class="inline-block">
                 <div class="tab-card inline-tab">
                     <div class="tab-content">
-                        <i class='${programming.class}'></i>
+                        ${checkImage}
                         ${programming.language}
                     </div>
                 </div>

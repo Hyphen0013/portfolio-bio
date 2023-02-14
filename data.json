@@ -2,7 +2,7 @@
     "name": "Aditya",
     "nic_name": "Rocky",
     "image": "./images/img/Aditya Image.jpg",
-    "overall_experience": "3.5+ Years",
+    "overall_experience": "3.6+ Years",
     "current_profile": "Associate Software Engineer",
 
     "detail": [
@@ -55,7 +55,7 @@
     },
 
     "career_object": {
-        "header_description": "Innovative, task-driven professional with 3 years and 5 Months of experience in web design and development accross product and service base industries. Work as full stack developer with front UI design as well as backend development. Make API in (Laravel) and Webservice in (Java) with unit testing and good knowledge in code debugging simple/complex issues, and implementing new features based on user feedback and good hand in JavaScript with testing",
+        "header_description": "Innovative, task-driven professional with 3 years and 6 Months of experience in web design and development accross product and service base industries. Work as full stack developer with front UI design as well as backend development. Make API in (Laravel) and Webservice in (Java) with unit testing and good knowledge in code debugging simple/complex issues, and implementing new features based on user feedback and good hand in JavaScript with testing",
         "description": "To be a part of dynamic and challenging organization that will help in effective utilization and enhancement of my skills toward the achievement of self and organizational objectives.",
         "points": "Project management, Code validation skills, Team leadership"
     },
@@ -76,15 +76,15 @@
                     "describe": "This project has many features. Login as backend user / front-end user. Backend user who manage the website. Project has login feature with social site, simple login, email verification, search user/house, like feature, rate the house and add as friend and many more."
                 },                  
                 {
-                    "link": "https://hy-search-engine.herokuapp.com/",
+                    "link": "Simple Search Engine",
                     "describe": "Search engine! Made in express (NodeJS) and template ejs. You can search people and get details of the person. Scroll bottom to load more data in dashboard page"
                 },                              
                 {
-                    "link": "http://honeybug.herokuapp.com/",
+                    "link": "UI Static Website",
                     "describe": "Static Website (Use Express - NodeJS for dynamic route)"
                 },                
                 {
-                    "link": "https://transformerhost.herokuapp.com/",
+                    "link": "Simple Static Website",
                     "describe": "Static Website (use HTML, CSS and JavaScript)"
                 }
             ],
@@ -216,12 +216,14 @@
         {
             "language": "HTML",
             "image": "./images/programming/html.png",
+            "check_img": "N",
             "description": "HyperText Markup Language (HTML) is the basic scripting language used by web browsers to render pages on the world wide web. HyperText allows a user to click a link and be redirected to a new page referenced by that link.",
             "class": "fab fa-html5",
             "more_description": ""
         },    
         {
             "language": "CSS",
+            "check_img": "N",
             "image": "./images/programming/CSS.png",
             "description": "Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.",
             "class": "fab fa-css3-alt",
@@ -229,13 +231,23 @@
         },    
         {
             "language": "JavaScript",
+            "check_img": "N",
             "image": "./images/programming/JavaScript.png",
             "description": "JavaScript (often shortened to JS) is a lightweight, interpreted, object-oriented language with first-class functions, and is best known as the scripting language for Web pages, but it's used in many non-browser environments as well. It is a prototype-based, multi-paradigm scripting language that is dynamic, and supports object-oriented, imperative, and functional programming styles.",
             "class": "fab fa-js javascript",
             "more_description": ""
         },
         {
+            "language": "React",
+            "check_img": "N",
+            "image": "./images/programming/react.png",
+            "description": "React is a free and open-source front-end JavaScript library for building user interfaces based on UI components. It is maintained by Meta and a community of individual developers and companies.",
+            "class": "fab fa-react",
+            "more_description": ""
+        },
+        {
             "language": "Jquery",
+            "check_img": "N",
             "image": "./images/programming/Jquery.png",
             "description": "jQuery is a lightweight, \"write less, do more\", JavaScript library. The purpose of jQuery is to make it much easier to use JavaScript on your website. jQuery takes a lot of common tasks that require many lines of JavaScript code to accomplish, and wraps them into methods that you can call with a single line of code.",
             "class": "far fa-file-code jquery",
@@ -243,6 +255,7 @@
         },
         {
             "language": "Laravel",
+            "check_img": "N",
             "image": "./images/programming/Laravel.png",
             "description": "Laravel is a free and open-source PHP web framework, created by Taylor Otwell and intended for the development of web applications following the model–view–controller (MVC) architectural pattern and based on Symfony.",
             "class": "fab fa-laravel",
@@ -250,6 +263,7 @@
         },
         {
             "language": "Java",
+            "check_img": "N",
             "image": "./images/programming/Java.png",
             "description": "Java is a widely used object-oriented programming language and software platform that runs on billions of devices, including notebook computers, mobile devices, gaming consoles, medical devices and many others. The rules and syntax of Java are based on the C and C++ languages.",
             "class": "fab fa-java",
@@ -257,6 +271,7 @@
         },
         {
             "language": "JSP",
+            "check_img": "Y",
             "image": "./images/programming/JSP.png",
             "description": "JavaServer Pages (JSP) is a Java standard technology that enables you to write dynamic, data-driven pages for your Java web applications. JSP is built on top of the Java Servlet specification. The two technologies typically work together, especially in older Java web applications.",
             "class": "fab fa-java jsp",
@@ -264,13 +279,23 @@
         },
         {
             "language": "Servlet",
+            "check_img": "N",
             "image": "./images/programming/Java.png",
             "description": "A servlet is a Java programming language class that is used to extend the capabilities of servers that host applications accessed by means of a request-response programming model. Although servlets can respond to any type of request, they are commonly used to extend the applications hosted by web servers.",
             "class": "fab fa-java",
             "more_description": ""
         },
         {
+            "language": "Spring Boot",
+            "check_img": "Y",
+            "image": "./images/programming/spring-boot.png",
+            "description": "Spring Boot is an open source Java-based framework used to create a micro Service. It is developed by Pivotal Team and is used to build stand-alone and production ready spring applications. This chapter will give you an introduction to Spring Boot and familiarizes you with its basic concepts.",
+            "class": "fab fa-java",
+            "more_description": ""
+        },
+        {
             "language": "SQL",
+            "check_img": "N",
             "image": "./images/programming/sql.png",
             "description": "Structured Query Language (SQL) is a standardized programming language that is used to manage relational databases and perform various operations on the data in them.",
             "class": "fas fa-database",

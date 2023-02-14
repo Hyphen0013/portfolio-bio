@@ -257,6 +257,7 @@ p {
 
 .profile-card span {
     opacity: 0.6;
+    font-weight: 600;
 }
 
 .profile-card i {
@@ -331,7 +332,7 @@ p {
 }
 
 /* FONT AWESOME */
-.fa-html5, .fa-windows, .jquery, .fa-database, .fa-graduation-cap, .fa-windows, .fa-jira, .fa-sourcetree, .fa-bitbucket, .fa-linkedin-in, .fa-twitter, .fa-skype { color: var(--blue-light);}
+.fa-html5, .fa-windows, .jquery, .fa-database, .fa-graduation-cap, .fa-windows, .fa-jira, .fa-sourcetree, .fa-bitbucket, .fa-linkedin-in, .fa-twitter, .fa-skype,.fa-react { color: var(--blue-light);}
 .fa-css3-alt, .fa-laravel, .fa-java, .fa-school, .jsp, .fa-git-square, .fa-ubuntu, .fa-gitlab, .fa-envelope-square  { color: var(--red);}
 .javascript { color: var(--yellow);}
 
