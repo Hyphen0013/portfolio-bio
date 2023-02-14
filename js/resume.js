@@ -150,6 +150,8 @@ function educationsResume1(jsonOutput) {
 
                 <p class="sub-description res1-left">${board} (${jsonOutput.education[eduNo]['affiliated']})</p>
             </div>
+            </br>
+            </br>
         `;
     }
     firstOutput += `</div>`;
