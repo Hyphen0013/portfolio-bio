@@ -328,13 +328,20 @@ function functSkillResume1(jsonOutput) {
         <div class="resume1_right-content">
             <h3 class="main_header-res1 f-blue">FUNCTIONAL SKILLS</h3>
             <hr>  
-            <div class="res1_technical-skills padding-equal font-p">
+            <div class="res1_technical-skills padding-equal font-p"  style="display: flex; flex-direction: row; gap: 5px;">
     `;
     for(let skill of jsonOutput['functional_skills'])  {
+        if(Object.keys(skill)[0] === 'image') {
+            styleImg = "height: 22px; width: 26px;";
+        } else {
+            styleImg = "font-size: 22px";
+        }
+        checkImage = Object.keys(skill)[0] === 'image' ? `<img src=".${skill.image}" style='${styleImg}' />` : `<i class='${skill.class}' style='${styleImg}'></i>`;
+
         firstOutput += `
             <div>
-                <span class="bg-grey">
-                    <i class="${skill.class}"></i>
+                <span class="bg-grey" style="display: flex; flex-direction: row; gap: 5px; align-items: center;">
+                    ${checkImage}
                     ${skill['tech-name']}
                 </span>
             </div>

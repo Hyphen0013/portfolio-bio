@@ -55,7 +55,7 @@
     },
 
     "career_object": {
-        "header_description": "Innovative, task-driven professional with 3 years and 6 Months of experience in web design and development accross product and service base industries. Work as full stack developer with front UI design as well as backend development. Make API in (Laravel) and Webservice in (Java) with unit testing and good knowledge in code debugging simple/complex issues, and implementing new features based on user feedback and good hand in JavaScript with testing",
+        "header_description": "Innovative, task-driven professional with 3 years and 6 Months of experience in web design and development accross product and service base industries. Work as full stack developer with front UI design as well as backend development. Make API in (Laravel) and Webservice in (Java), Make Microservices, Good hand in Java Collection - with unit testing and good knowledge in code debugging simple/complex issues, and implementing new features based on user feedback and good hand in JavaScript with testing in Browser ",
         "description": "To be a part of dynamic and challenging organization that will help in effective utilization and enhancement of my skills toward the achievement of self and organizational objectives.",
         "points": "Project management, Code validation skills, Team leadership"
     },
@@ -343,6 +343,11 @@
         {
             "class":"fab fa-github",
             "tech-name": "github",
+            "show": "Y"            
+        },
+        {
+            "image": "./images/programming/postman.png",
+            "tech-name": "Postman",
             "show": "Y"            
         }
     ],
