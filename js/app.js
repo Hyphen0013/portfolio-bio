@@ -531,20 +531,27 @@ function functionalSkills(jsonOutput) {
                 <div class="group-title">${sentencedCase("functional skills", seprater = " ")} </div>
             </div>
 
-            <div style="padding: 5px;" id="func-skill"></div>
-        </section>    
+            <div style="display: flex; flex-direction: row; gap: 5px; align-items: center;" id="func-skill"></div>
+        </section>
 
     `;
     document.querySelector("#functional-skills").innerHTML = osOutput;
 
     let geSkillOutput = "";
     for (let skill of jsonOutput.functional_skills) {
+        if(Object.keys(skill)[0] === 'image') {
+            styleImg = "height: 22px; width: 26px;";
+        } else {
+            styleImg = "font-size: 22px";
+        }
+        checkImage = Object.keys(skill)[0] === 'image' ? `<img src=".${skill.image}" style='${styleImg}' />` : `<i class='${skill.class}' style='${styleImg}'></i>`;
+
         if(skill.show === 'Y') {
             geSkillOutput = `
                 <div class="inline-block">
                     <div class="tab-card inline-tab">
-                        <div class="tab-content">
-                            <i class='${skill['class']}'></i>
+                        <div class="tab-content" style="display: flex; flex-direction: row; gap: 5px; align-items: center;">
+                            ${checkImage}
                             ${sentencedCase(skill['tech-name'], seprater = " ")}
                         </div>
                     </div>
