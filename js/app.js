@@ -544,7 +544,7 @@ function functionalSkills(jsonOutput) {
         } else {
             styleImg = "font-size: 22px";
         }
-        checkImage = Object.keys(skill)[0] === 'image' ? `<img src=".${skill.image}" style='${styleImg}' />` : `<i class='${skill.class}' style='${styleImg}'></i>`;
+        checkImage = Object.keys(skill)[0] === 'image' ? `<img src="${skill.image}" style='${styleImg}' />` : `<i class='${skill.class}' style='${styleImg}'></i>`;
 
         if(skill.show === 'Y') {
             geSkillOutput = `
