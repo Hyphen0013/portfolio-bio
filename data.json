@@ -55,7 +55,7 @@
     },
 
     "career_object": {
-        "header_description": "Innovative, task-driven professional with 3 years and 6 Months of experience in web design and development accross product and service base industries. Work as full stack developer with front UI design as well as backend development. Make API in (Laravel) and Webservice in (Java), Make Microservices, Good hand in Java Collection - with unit testing and good knowledge in code debugging simple/complex issues, and implementing new features based on user feedback and good hand in JavaScript with testing in Browser ",
+        "header_description": "Innovative, task-driven professional with 3 years and 6 Months of experience in web design and development accross product and service base industries. Work as full stack developer with front UI design as well as backend development. Make API and Webservice in (Java), Make Microservices, Good hand in Java Collection, Design Pattern - with unit testing and good knowledge in code debugging simple/complex issues, and implementing new features based on user feedback and good hand in JavaScript with testing in Browser ",
         "description": "To be a part of dynamic and challenging organization that will help in effective utilization and enhancement of my skills toward the achievement of self and organizational objectives.",
         "points": "Project management, Code validation skills, Team leadership"
     },
@@ -147,7 +147,7 @@
             "status": "leave",
             "organization": "\"Prolitus Technology Pvt. Ltd. \"",
             "year": "2019-08 to 2022-01",
-            "technology": "Work as <i>Laravel software developer </i>",
+            "technology": "Work as <i>Fullstack software developer </i>",
             "total_exp": "2 Years 5 Months",
             "address": "Stellar IT Park, Tower B, 5th Floor, Sector 62, Noida - 201309, Uttar Pradesh, India.",
             "short_address": "Noida - 62",
@@ -353,11 +353,12 @@
     ],
 
     "project_experience": [
-        "Work on 3 projects (laravel) in organization related to Banking Sector",
+        "Work in 3 projects as Fullstack in organization related to Banking Sector and 1 in Product based",
         "E-com website with cart and return policy made by self",
         "Work on webhook API",
         "Work on Simple API",
-        "Make webservice in java"
+        "Make webservice in Java",
+        "Make Microservices in SpringBoot"
     ],
 
     "certification": [
@@ -391,8 +392,10 @@
     ],
 
     "hobbies": [
+        "Making new things, with coding",
+        "Learning new technologies (love coding in React)",
         "Playing video game",
-        "Watching movie",
+        "Watching movie, Series startup related, Sci-Fi",
         "Playing Cricket"
     ],
 

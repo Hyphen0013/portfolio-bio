@@ -169,7 +169,7 @@ function interestsResume1(jsonOutput) {
         firstOutput += `
             <div class="work_exper-description font-p">
                 <div class="mb-1">
-                    <li style="margin-bottom: 4px; word-break: break-all;">${hobbies}</li>
+                    <li style="margin-bottom: 10px; word-break: break-all;">${hobbies}</li>
                 </div>
             </div>
         `;
