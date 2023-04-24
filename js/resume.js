@@ -26,7 +26,7 @@ function resume1Top(jsonOutput) {
                 <div class="resume1-header">
                     <h1 class="f-blue" style="font-size: 1.2em; letter-spacing: 1.2px;">${jsonOutput.name}</h1>
                     <span class="main_header-res1 f-blue main_sub-header fw_300">${jsonOutput.current_profile}</span>
-                    ${filterWordsAndModify("3 years and 6 Months", jsonOutput.career_object.header_description)}
+                    ${filterWordsAndModify("3 years and 8 Months", jsonOutput.career_object.header_description)}
                 </div>
             </div>  
         </div>
@@ -97,29 +97,32 @@ function technicalResume1Skills(jsonOutput) {
     `;    
 
     for(let programming of jsonOutput.programming) {
-        if(programming.image.includes("react.png")) {
-            styleImg = "height: 14px; width: 26px;";
-        } else if(programming.image.includes("spring-boot.png")) {
-            styleImg = "height: 14px; width: 60px;";
-        } else if(programming.image.includes("JSP.png")) {
-            styleImg = "height: 14px; width: 20px;";
-        } else {
-            styleImg = "height: 14px; width: 14px;";
+        if(programming.display === 'Y') {
+            if(programming.image.includes("react.png")) {
+                styleImg = "height: 14px; width: 26px;";
+            } else if(programming.image.includes("spring-boot.png")) {
+                styleImg = "height: 14px; width: 60px;";
+            } else if(programming.image.includes("JSP.png")) {
+                styleImg = "height: 14px; width: 20px;";
+            } else {
+                styleImg = "height: 14px; width: 14px;";
+            }
+
+            checkImage = programming.check_img === "Y" ? `<img src=".${programming.image}" style='${styleImg}' />` : `<i class='${programming.class}'></i>`;
+
+            firstOutput += `
+                <div>
+                    <span class="bg-grey font-p">
+                        ${checkImage}
+                        ${programming.language}
+                    </span>
+                </div>
+            `;
         }
-
-        checkImage = programming.check_img === "Y" ? `<img src=".${programming.image}" style='${styleImg}' />` : `<i class='${programming.class}'></i>`;
-
-        firstOutput += `
-            <div>
-                <span class="bg-grey font-p">
-                    ${checkImage}
-                    ${programming.language}
-                </span>
-            </div>
-        `;
     }
     firstOutput += `</div>`;
     document.querySelector("#technical-res1").insertAdjacentHTML("beforeend", firstOutput);
+    
 }
 
 function educationsResume1(jsonOutput) {
