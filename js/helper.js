@@ -324,3 +324,25 @@ SliderShow.prototype.init = function () {
 }
 
 // new SliderShow('status_slide');
+
+// PICK RANDOM COLOR
+function pickRandomColor() {
+    const arrColor = [
+        "#fae3e3",
+        "#dbdbdb",
+        "#f5f0aa",
+        "#c2f5aa",
+        "#dcf2e4",
+        "#aaf5e7",
+        "##daf3fa",
+        "#cee2f6",
+        "#b9bdef",
+        "#dcd0f4",
+        "#e6b9ef",
+        "#fae6f5",
+        "#fae6eb",
+        "#f8f8f8"
+    ];
+    let randomNum = Math.floor(Math.random() * arrColor.length);
+    return arrColor[randomNum];    
+}

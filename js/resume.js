@@ -335,7 +335,7 @@ function functSkillResume1(jsonOutput) {
     `;
     for(let skill of jsonOutput['functional_skills'])  {
         if(Object.keys(skill)[0] === 'image') {
-            styleImg = "height: 22px; width: 26px;";
+            styleImg = "height: 20px; width: 26px;";
         } else {
             styleImg = "font-size: 22px";
         }
@@ -343,7 +343,7 @@ function functSkillResume1(jsonOutput) {
 
         firstOutput += `
             <div>
-                <span class="bg-grey" style="display: flex; flex-direction: row; gap: 5px; align-items: center;">
+                <span class="bg-grey" style="display: flex; gap: 4px;">
                     ${checkImage}
                     ${skill['tech-name']}
                 </span>

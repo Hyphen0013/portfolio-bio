@@ -33,7 +33,7 @@ body {
 }
 
 .group-right {
-    color: var(--grey-light);
+    color: var(--black);
 }
 
 .notification-grid {
@@ -122,7 +122,7 @@ body {
 }
 
 .notification-time {
-    color: var(--grey-light);
+    color: var(--black);
 }
 
 .notification-content {

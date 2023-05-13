@@ -11,6 +11,7 @@
 
     console.log(window.location.origin)
  */
+const randomColor = pickRandomColor();
 let http = new XMLHttpRequest();
 http.open("get", "data.json", true);
 http.send();
@@ -184,7 +185,7 @@ function technicalSkills(jsonOutput) {
             getProOutput = `
                 <div class="inline-block">
                     <div class="tab-card inline-tab">
-                        <div class="tab-content">
+                        <div class="tab-content" style="background: ${randomColor}">
                             ${checkImage}
                             ${programming.language}
                         </div>
@@ -230,7 +231,7 @@ function education(jsonOutput) {
         <div class="avatar">
             <img src=${jsonOutput.education[eduNo]['image']} alt=${jsonOutput.education[eduNo]['cource']}>
         </div>
-        <div class="notification-card">
+        <div class="notification-card" style="background: ${randomColor}">
             <div class="notification-header">
                 <i class='${jsonOutput.education[eduNo]['class']}'></i>
 
@@ -275,7 +276,7 @@ function intership(jsonOutput) {
         <div class="avatar">
             <img src=${jsonOutput.summer_intership[intern]['image']} alt=${jsonOutput.summer_intership[intern]['type']}>
         </div>
-        <div class="notification-card">
+        <div class="notification-card" style="background: ${randomColor}">
             <div class="notification-header">
                 <i class='${jsonOutput.summer_intership[intern]['class']}'></i>
 
@@ -315,7 +316,7 @@ function certification(jsonOutput) {
         <div class="avatar">
             <img src=${certificate['image']} alt=${certificate['type']}>
         </div>
-        <div class="notification-card">
+        <div class="notification-card" style="background: ${randomColor}">
             <div class="notification-header">
                 <i class='${certificate['class']}'></i>
 
@@ -356,7 +357,7 @@ function workExperience(jsonOutput) {
         <div class="avatar">
             <img src=${jsonOutput.work_experience[work]['image']} alt=${jsonOutput.work_experience[work]['year']}>
         </div>
-        <div class="notification-card">
+        <div class="notification-card" style="background: ${randomColor}">
             <div class="notification-header">
                 <i class='${jsonOutput.work_experience[work]['class']}'></i>
 
@@ -395,7 +396,7 @@ function projectExperience(jsonOutput) {
     for (let project of jsonOutput.project_experience) {
         getProOutput = `
         <div></div>
-        <div class="notification-card">
+        <div class="notification-card" style="background: ${randomColor}">
             <p style="color: var(--grey-1);">${project}</p>
         </div>`;
         document.querySelector("#project_experience").insertAdjacentHTML("beforeend", getProOutput);
@@ -422,7 +423,7 @@ function hobbies(jsonOutput) {
         getHobbieOutput = `
             <div class="inline-block">
                 <div class="tab-card inline-tab">
-                    <div class="tab-content">
+                    <div class="tab-content" style="background: ${randomColor}">
                         <i class='fas fa-puzzle-piece'></i>
                         ${hobbies}
                     </div>
@@ -453,7 +454,7 @@ function strength(jsonOutput) {
         getStrenOutput = `
             <div class="inline-block">
                 <div class="tab-card inline-tab">
-                    <div class="tab-content">
+                    <div class="tab-content" style="background: ${randomColor}">
                         <i class='fas fa-dumbbell'></i>
                         ${strength}
                     </div>
@@ -486,7 +487,7 @@ function communitActivities(jsonOutput) {
 
         getActivityOutput = `
             <div></div>
-            <div class="notification-card">
+            <div class="notification-card" style="background: ${randomColor}">
                 <p style="color: var(--grey-1);">${jsonOutput.community_activities[0][acti]}</p>
             </div>`;
         document.querySelector("#community-tab").insertAdjacentHTML("beforeend", getActivityOutput);
@@ -513,7 +514,7 @@ function operatingSystem(jsonOutput) {
         getOsOutput = `
             <div class="inline-block">
                 <div class="tab-card inline-tab">
-                    <div class="tab-content">
+                    <div class="tab-content" style="background: ${randomColor}">
                         <i class='${operating['class']}'></i>
                         ${operating['os_type']}
                     </div>
@@ -533,7 +534,7 @@ function functionalSkills(jsonOutput) {
                 <div class="group-title">${sentencedCase("functional skills", seprater = " ")} </div>
             </div>
 
-            <div style="display: flex; flex-direction: row; gap: 5px; align-items: center;" id="func-skill"></div>
+            <div id="func-skill"></div>
         </section>
 
     `;
@@ -552,7 +553,7 @@ function functionalSkills(jsonOutput) {
             geSkillOutput = `
                 <div class="inline-block">
                     <div class="tab-card inline-tab">
-                        <div class="tab-content" style="display: flex; flex-direction: row; gap: 5px; align-items: center;">
+                        <div class="tab-content" style="background: ${randomColor}">
                             ${checkImage}
                             ${sentencedCase(skill['tech-name'], seprater = " ")}
                         </div>
