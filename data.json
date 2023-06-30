@@ -72,6 +72,10 @@
                     "describe": "Portfolio (Data stored in JSON and replicate data by JavaScript use of XMLHttpRequest)"
                 },                
                 {
+                    "link": "https://react-full-features.netlify.app/",
+                    "describe": "In this project i used most of concept in react Class Component, Functional Component, Route V6, two way binding, Nav and many more."
+                },                  
+                {
                     "link": "Nigyroom",
                     "describe": "This project has many features. Login as backend user / front-end user. Backend user who manage the website. Project has login feature with social site, simple login, email verification, search user/house, like feature, rate the house and add as friend and many more."
                 },                  
