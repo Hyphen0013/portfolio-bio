@@ -55,7 +55,7 @@
     },
 
     "career_object": {
-        "header_description": "Innovative, task-driven professional with 3 years and 8 Months of experience in web design and development accross product and service base industries. Work as full stack developer with front UI design as well as backend development. Make API and Webservice in (Java), Make Microservices, Good hand in Java Collection, Design Pattern - with unit testing and good knowledge in code debugging simple/complex issues, and implementing new features based on user feedback and good hand in JavaScript with testing in Browser ",
+        "header_description": "Innovative, task-driven professional with 3 years and 8 Months of experience in web design and development accross product and service base industries. Work as full stack developer with front UI design as well as backend development. Make API and Webservice in (Java), Make Microservices, Good hand in Java Collection, Design Pattern - with unit testing and good knowledge in code debugging simple/complex issues, and implementing new features based on user feedback and good hand in JavaScript and ReactJS with testing in Browser ",
         "description": "To be a part of dynamic and challenging organization that will help in effective utilization and enhancement of my skills toward the achievement of self and organizational objectives.",
         "points": "Project management, Code validation skills, Team leadership"
     },
@@ -127,14 +127,39 @@
         }
     },
     
+    "technical_skills": {
+        "tech_skill_1": {
+            "type": "ReactJS",
+            "language_skills": [
+                "Work on Controlled and Un-Controller Component",
+                "Two way binding",
+                "Manage state",
+                "Form validation, local-storage, etc.,",
+                "Good hands on React Hooks",
+                "Working with Redux",
+                "Working with Redux-Thunk, Redux promise, Redux-Saga and Redux Toolkit"
+            ]           
+        },
+        "tech_skill_2": {
+            "type": "SpringBoot",
+            "language_skills": [
+                "Make Monolithic Application - RESTful API",
+                "Work with Spring Security 6",
+                "Working with JWT Authentication",
+                "Good hands on Spring Data JPA",
+                "Make Microservice according to services"
+            ]           
+        }
+    },
+    
     "work_experience": {
         "company_1": {
             "type": "Associate Software Engineer",
-            "status": "working",
+            "status": "leave",
             "organization": "\"Garg Data Information (P) LTD\"",
             "year": "2022-01 to 2023-04",
             "technology": "<i>Java Developer</i>",
-            "total_exp": "2022-01 to till now",
+            "total_exp": "2022-01 to 2023-04",
             "address": "B-20-21, Block B, Sector 3, Noida, Uttar Pradesh 201301",
             "short_address": "Noida - 3",
             "class": "fas fa-industry",
@@ -323,6 +348,10 @@
         {
             "class":"fab fa-ubuntu",
             "os_type": "Ubuntu Operating System"
+        },
+        {
+            "class":"fab fa-apple",
+            "os_type": "Mac Operating System"
         },
         {
             "class":"fab fa-windows",

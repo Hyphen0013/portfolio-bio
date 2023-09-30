@@ -331,6 +331,11 @@ p {
     margin-top: var(--mt);
 }
 
+.youtube-logo .fa-youtube {
+    font-size: 1.5rem;
+    color: var(--red);
+}
+
 /* FONT AWESOME */
 .fa-html5, .fa-windows, .jquery, .fa-database, .fa-graduation-cap, .fa-windows, .fa-jira, .fa-sourcetree, .fa-bitbucket, .fa-linkedin-in, .fa-twitter, .fa-skype,.fa-react { color: var(--blue-light);}
 .fa-css3-alt, .fa-laravel, .fa-java, .fa-school, .jsp, .fa-git-square, .fa-ubuntu, .fa-gitlab, .fa-envelope-square  { color: var(--red);}
@@ -344,6 +349,8 @@ p {
 .fa-address-card {color: var(--green-light);}
 .fa-briefcase {color: var(--cyan);}
 .fa-bitbucket, .fa-github {color: var(--grey);}
+
+
 
 /* TABLE */
 

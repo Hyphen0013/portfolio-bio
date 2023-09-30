@@ -20,6 +20,7 @@ http.onload = function () {
         let jsonOutput = JSON.parse(this.responseText);
 
         profileDetail(jsonOutput);
+        youTuber(jsonOutput);
         technicalSkills(jsonOutput);
         education(jsonOutput);
         intership(jsonOutput);
@@ -149,6 +150,38 @@ function profileDetail(jsonOutput) {
         conent.scrollLeft -= 300;
         event.preventDefault();
     });
+}
+
+// TECHNICAL SKIL
+function youTuber(jsonOutput) {
+    let techOutput = "";
+    let checkImage;
+    let styleImg;
+    techOutput += `
+        <section class="tab-section mt">
+            <div class="group-header">
+                <div class="group-title"><span class="youtube-logo"><i class='fab fa-youtube'></i></span> YouTuber</div>
+            </div>
+
+            <div style="padding: 5px;" id="youtuber-tab"></div>
+        </section>    
+
+    `;
+    document.querySelector("#youtuber").innerHTML = techOutput;
+
+    let youtubeLink = "";
+    youtubeLink = `
+        <div class="inline-block">
+            <div class="tab-card inline-tab">
+                <div class="tab-content" style="background: ${randomColor}">
+                    <span><i class="fas fa-link"></i> </span> <a href="https://www.youtube.com/@BinaryCall" target="_blank">https://www.youtube.com/@BinaryCall</a>
+                </div>
+            </div>
+        </div> 
+    `;
+    document.querySelector("#youtuber-tab").insertAdjacentHTML("beforeend", youtubeLink);
+
+
 }
 
 // TECHNICAL SKIL
