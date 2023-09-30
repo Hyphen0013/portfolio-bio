@@ -207,9 +207,9 @@ function resume1BottomRight(jsonOutput) {
     firstOutput += `<div class="resume1_bottom-right" id="work-experience"></div>`
 
     document.querySelector("#resume1_container-bottom").insertAdjacentHTML("beforeend", firstOutput); 
+    youtubeLink(jsonOutput);
     technicalSkillsRight(jsonOutput);
     workExperResume1(jsonOutput);
-    youtubeLink(jsonOutput);
     projectResume1(jsonOutput);
     certificationResume1(jsonOutput);
     onOSWorkResume1(jsonOutput);
@@ -217,6 +217,27 @@ function resume1BottomRight(jsonOutput) {
     strengthResume1(jsonOutput);
     personalDetailsResume1(jsonOutput);
     declarationResume1(jsonOutput);
+}
+
+// YouTuber - 
+function youtubeLink(jsonOutput) {
+    let firstOutput = `
+        <div class="resume1_right-content">
+            <h3 class="main_header-res1 f-blue"><span style="color: var(--red)"><i class='fab fa-youtube'></i></span> YouTuber</h3>
+            <hr>  
+            <div class="res1_technical-skills padding-equal font-p">
+    `;
+
+    firstOutput += `
+        <div>
+            <span class="bg-grey">
+                <i class="fas fa-link"></i>
+                <a href="https://www.youtube.com/@BinaryCall" target="_blank">https://www.youtube.com/@BinaryCall</a>
+            </span>
+        </div>
+    `;
+    firstOutput += "</div>";
+    document.querySelector("#work-experience").insertAdjacentHTML("beforeend", firstOutput);
 }
 
 function technicalSkillsRight(jsonOutput) {
@@ -228,8 +249,6 @@ function technicalSkillsRight(jsonOutput) {
     for(let i = 0; i < Object.keys(jsonOutput.technical_skills).length; i++) {
         var work = String(Object.keys(jsonOutput.technical_skills)[i]);
 
-        console.log(jsonOutput.technical_skills[work])
-        
         firstOutput += '<div class="padding-equal border-dotted">';
         firstOutput += '<span class="main_header-res1 main_sub-header fw_300">'+ jsonOutput.technical_skills[work]['type'] +'</span>';
         firstOutput += '<ul>';
@@ -278,27 +297,6 @@ function workExperResume1(jsonOutput) {
         firstOutput += '</div>';
     }
     
-    firstOutput += "</div>";
-    document.querySelector("#work-experience").insertAdjacentHTML("beforeend", firstOutput);
-}
-
-// YouTuber - 
-function youtubeLink(jsonOutput) {
-    let firstOutput = `
-        <div class="resume1_right-content">
-            <h3 class="main_header-res1 f-blue"><span style="color: var(--reu)"><i class='fab fa-youtube'></i></span> YouTuber</h3>
-            <hr>  
-            <div class="res1_technical-skills padding-equal font-p">
-    `;
-
-    firstOutput += `
-        <div>
-            <span class="bg-grey">
-                <i class="fas fa-link"></i>
-                <a href="https://www.youtube.com/@BinaryCall" target="_blank">https://www.youtube.com/@BinaryCall</a>
-            </span>
-        </div>
-    `;
     firstOutput += "</div>";
     document.querySelector("#work-experience").insertAdjacentHTML("beforeend", firstOutput);
 }
