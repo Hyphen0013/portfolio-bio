@@ -168,7 +168,8 @@
                 "Make Webservice in Java",
                 "UI Design use JavaScript",
                 "Use AG Grid for data render in table",
-                "Use in-built J4 Frame built by Garg Data Information (P) LTD."
+                "Use in-built J4 Frame built by Garg Data Information (P) LTD.",
+                "Make a RESTful Web service in Spring Boot and Replicate on Front-end use of ReactJS."
             ]           
         },        
         "company_2": {
@@ -188,7 +189,9 @@
                 "Use Datatable for data render in table",
                 "Make Rest API",
                 "Call API like Karza, etc, for check Aadhar, PAN Card varification",
-                "Encrypt data for API use SHA-16 algorithm to encrypt data"
+                "Encrypt data for API use SHA-16 algorithm to encrypt data",
+                "Make a RESTful Web service in Spring Boot and Replicate on Front-end use of ReactJS. Working with Redux with state management",
+                "Make microservice for some modules and services"
             ]              
         }
     },

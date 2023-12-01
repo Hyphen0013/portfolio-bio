@@ -42,7 +42,10 @@ function profileDetail(jsonOutput) {
     techOutput += `
         <section class="tab-section">
             <div class="group-header">
-                <div class="group-title" style="display: flex; align-items: end;">${sentencedCase("Details", seprater = " ")} </div> <a href="resume/resume1.html" target="_blank" class="login_btn"> Resume</a>
+                <div class="group-title" style="display: flex; align-items: end;">
+                    ${sentencedCase("Details", seprater = " ")} 
+                </div> 
+                <a href="resume/resume1.html" target="_blank" class="login_btn"> Resume</a>
             </div>
             <span class="scroll-btn left_scroll-btn" id="left-button"><i class="fas fa-angle-left"></i></span>
             <div class="tab tab-slider" id="prodil-tab"></div>
