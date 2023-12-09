@@ -176,7 +176,7 @@ function youTuber(jsonOutput) {
     youtubeLink = `
         <div class="inline-block">
             <div class="tab-card inline-tab">
-                <div class="tab-content" style="background: ${randomColor}">
+                <div class="tab-content tab-indicator" style="background: ${randomColor}">
                     <span><i class="fas fa-link"></i> </span> <a href="https://www.youtube.com/@BinaryCall" target="_blank">https://www.youtube.com/@BinaryCall</a>
                 </div>
             </div>
