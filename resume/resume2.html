@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+
+    <link rel="stylesheet" href="../css/var.css">
+    <link rel="stylesheet" href="../css/resume.css">
+    <link rel="stylesheet" href="../css/resume2.css">
+    <script src="../js/assets/kit.fontawsome.min.js"></script>
+    <style>
+        .hide-for-print {
+            padding: 0.5rem 0.8rem;
+            margin: 2rem;
+            background: var(--white-bg);
+            border: 1px solid var(--white-bg);
+            position: absolute;
+            color: var(--pink);
+            border-radius: 2px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            cursor: pointer;
+        } 
+        @media print { 
+            .hide-for-print { display: none !important; } 
+        }
+
+        @page {
+            margin-top: 0cm;
+            margin-bottom: 0.7cm;
+            margin-left: 1cm;
+            margin-right: 1cm;
+         }
+         /** Define the header rules **/
+        header {
+            position: fixed;
+            top:-1cm;
+        }
+        footer {
+            position: fixed;
+            bottom:2cm;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <button class="hide-for-print" onclick="window.print();" id="resume1-top"><i class="fas fa-print"></i> Print Resume</button>
+    
+    <script src="../js/helper.js"></script>
+    <script src="../js/resume2.js"></script>
+    <script src="../js/index.js"></script>
+</body>
+</html>

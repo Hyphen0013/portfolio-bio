@@ -1,0 +1,19 @@
+.resume1-left, .resume1_bottom-left2 {
+    width: 40%;
+    padding: 0.5rem 1rem;
+}
+
+.resume1-right, .resume1_bottom-right2 {
+    width: calc(100% - 40%);
+    border-radius: 2px;
+}
+
+.top_subheader {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.resume1_bottom-left2 h3 {
+    border-bottom: 1px solid #E1E8EE;
+}

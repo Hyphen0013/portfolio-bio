@@ -3,7 +3,7 @@
     "nic_name": "Rocky",
     "image": "./images/img/Aditya Image.jpg",
     "overall_experience": "3.8+ Years",
-    "current_profile": "Associate Software Engineer",
+    "current_profile": "Software Engineer",
 
     "detail": [
         {
@@ -55,7 +55,7 @@
     },
 
     "career_object": {
-        "header_description": "Innovative, task-driven professional with 3 years and 8 Months of experience in web design and development accross product and service base industries. Work as full stack developer with front UI design as well as backend development. Make API and Webservice in (Java), Make Microservices, Good hand in Java Collection, Design Pattern - with unit testing and good knowledge in code debugging simple/complex issues, and implementing new features based on user feedback and good hand in JavaScript and ReactJS with testing in Browser ",
+        "header_description": "Innovative, task-driven professional with 3 years and 8 Months of experience as a full stack development across product and service base firms using ReactJS and SpringBoot. Extensive experience in Making NBFC Portal (Manage LOS and LMS), Manage Inventory for Hotels, Make API and RESTful Webservice in (Java), Make Microservices, Good hand in Java Collection, Design Pattern - with unit testing and good knowledge in code debugging simple/complex issues, and implementing new features based on user feedback and good hand in JavaScript and ReactJS with testing in Browser ",
         "description": "To be a part of dynamic and challenging organization that will help in effective utilization and enhancement of my skills toward the achievement of self and organizational objectives.",
         "points": "Project management, Code validation skills, Team leadership"
     },
@@ -154,7 +154,7 @@
     
     "work_experience": {
         "company_1": {
-            "type": "Associate Software Engineer",
+            "type": "Software Engineer",
             "status": "leave",
             "organization": "\"Garg Data Information (P) LTD\"",
             "year": "2022-01 to 2023-04",
@@ -166,7 +166,8 @@
             "image": "./images/organization.png",
             "work_description": [
                 "Make Webservice in Java",
-                "UI Design use JavaScript",
+                "Make Whole new Module with different functionalities",
+                "Achieved 100% on-time project delivery to meet the regulatory milestone",
                 "Use AG Grid for data render in table",
                 "Use in-built J4 Frame built by Garg Data Information (P) LTD.",
                 "Make a RESTful Web service in Spring Boot and Replicate on Front-end use of ReactJS."
@@ -185,13 +186,13 @@
             "image": "./images/organization.png",
             "work_description": [
                 "Work as Full Stack Developer",
-                "UI Design",
-                "Use Datatable for data render in table",
-                "Make Rest API",
+                "UI Design and connect to backend",
+                "Make RESTful Webservice",
                 "Call API like Karza, etc, for check Aadhar, PAN Card varification",
                 "Encrypt data for API use SHA-16 algorithm to encrypt data",
                 "Make a RESTful Web service in Spring Boot and Replicate on Front-end use of ReactJS. Working with Redux with state management",
-                "Make microservice for some modules and services"
+                "Make microservice for some modules and services",
+                "Mentored junior team members, lead and guide them."
             ]              
         }
     },
@@ -536,6 +537,84 @@
             "email": "digyspab@gmail.com",
             "link_display": "Y",
             "link": "digyspab@gmail.com"
+        }
+    ],
+
+    "technical": [
+        {
+            "language": "JAVA"
+        },
+        {
+            "language": "Collection"
+        },
+        {
+            "language": "Stream API"
+        },
+        {
+            "language": "Spring"
+        },
+        {
+            "language": "Spring Boot"
+        },
+        {
+            "language": "Spring Security"
+        },
+        {
+            "language": "Spring Boot"
+        },
+        {
+            "language": "Microservices"
+        },
+        {
+            "language": "Design Patterns"
+        },
+        {
+            "language": "Hibernate"
+        },
+        {
+            "language": "JWT"
+        },
+        {
+            "language": "JUnit"
+        },
+        {
+            "language": "ReactJS"
+        },
+        {
+            "language": "Redux"
+        },
+        {
+            "language": "Mockito"
+        },
+        {
+            "language": "Docker"
+        },
+        {
+            "language": "HTML & CSS, JS"
+        },
+        {
+            "language": "MySQL"
+        },
+        {
+            "language": "GIT"
+        },
+        {
+            "language": "Github"
+        },
+        {
+            "language": "Source Tree"
+        },
+        {
+            "language": "Postman"
+        },
+        {
+            "language": "Jenkins"
+        },
+        {
+            "language": "Agile Software Development"
+        },
+        {
+            "language": "SCRUM Methodology"
         }
     ]
 }

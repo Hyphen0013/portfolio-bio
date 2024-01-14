@@ -120,7 +120,7 @@ table tr, td {
     position: absolute;
     content: '';
     padding: 5px 0;
-    width: 100%;
+    width: 95%;
     border-bottom: 1px dotted var(--grey-1)
 }
 
