@@ -17,8 +17,8 @@ function resume1Top(jsonOutput) {
             
             <div class="bg-grey padding-container" style="width: inherit;">
                 <div class="resume1-header">
-                    <h1 class="f-blue" style="font-size: 3.2em; letter-spacing: 1.2px; text-transform: uppercase; margin-bottom: -0.3em;">${jsonOutput.name}</h1>
-                    <span class="main_header-res1 f-blue main_sub-header fw_300" style="font-size: 1.5em;">${jsonOutput.current_profile}</span>
+                    <h1 class="f-blue" style="font-size: 2.8em; letter-spacing: 1.2px; text-transform: uppercase; margin-bottom: -0.3em;">${jsonOutput.name}</h1>
+                    <span class="main_header-res1 f-blue main_sub-header fw_300" style="font-size: 1em;">${jsonOutput.current_profile}</span>
                     <p class="f-blue" style="font-size: 0.8em;">
                         <a class="f-blue" href="https://hyphen0013.github.io/portfolio-bio/" target="_blank">https://hyphen0013.github.io/portfolio-bio/</a>
                     </p>
@@ -179,12 +179,11 @@ function professionalLeft(jsonOutput) {
         <div class="resume1_right-content">
             <h3 class="main_header-res1 f-blue">PROFESSIONAL SUMMARY</h3>
             <hr>  
-            <div class="padding-container">
+            <div class="padding-container_1">
                 <div class="resume1-header">
                     ${filterWordsAndModify("3 years and 8 Months", jsonOutput.career_object.header_description)}
                 </div>
             </div> 
-            <div class="res1_technical-skills padding-equal font-p">
     `;
     firstOutput += "</div>";
     document.querySelector("#work-experience").insertAdjacentHTML("beforeend", firstOutput);
@@ -209,16 +208,37 @@ function workExperResumeLeft(jsonOutput) {
         firstOutput += '</li>';
         firstOutput += '<div class="mt-1 work_exper-description main_sub-header font-p">';
         
+        // Project 1
+        // firstOutput += '<p class="project-border"><b style="padding-right: 10px;">Projects 1: </b> '+ jsonOutput.work_experience[work]['project_1'] +'</p>';
+
+        // firstOutput += '<p style="margin-bottom: 10px;"> <b>Duration: </b> '+ jsonOutput.work_experience[work]['duration_1'] +'</p>';
+
+        // firstOutput += '<p style="margin-bottom: 10px;"> <b>Skills: </b> '+ jsonOutput.work_experience[work]['skills_1'] +'</p>';
+        
+        // firstOutput += '<p style="margin-bottom: 5px;"><b>Roles & Responsibilities</b></p>';
         jsonOutput.work_experience[work]['work_description'].forEach(function(value, index) {
-            firstOutput += '<li>' + value + '</li>';
-        })        
+            firstOutput += '<li style="margin-bottom: 5px;">' + value + '</li>';
+        }) 
+        
+        // if(jsonOutput.work_experience[work]['project_2'] != undefined) {
+        // // Project 2
+        // firstOutput += '<p class="project-border"><b style="padding-right: 10px;">Projects 2:</b> '+ jsonOutput.work_experience[work]['project_2'] +'</p>';
+
+        // firstOutput += '<p style="margin-bottom: 10px;"> <b>Duration: </b> '+ jsonOutput.work_experience[work]['duration_2'] +'</p>';
+
+        // firstOutput += '<p style="margin-bottom: 10px;"> <b>Skills: </b> '+ jsonOutput.work_experience[work]['skills_2'] +'</p>';
+        
+        // firstOutput += '<p style="margin-bottom: 5px;"><b>Roles & Responsibilities</b></p>';
+        //     jsonOutput.work_experience[work]['work_description_2'].forEach(function(value, index) {
+        //         firstOutput += '<li style="margin-bottom: 5px;">' + value + '</li>';
+        //     });
+        // }
         
         firstOutput += '</div>';
         firstOutput += '</ul>';
 
         firstOutput += '</div>';
     }
-    
     firstOutput += "</div>";
     document.querySelector("#work-experience").insertAdjacentHTML("beforeend", firstOutput);
 }

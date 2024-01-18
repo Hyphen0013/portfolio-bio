@@ -17,3 +17,14 @@
 .resume1_bottom-left2 h3 {
     border-bottom: 1px solid #E1E8EE;
 }
+
+.padding-container_1 {
+    margin: 0 1rem;
+}
+
+.project-border {
+    margin-top: 1rem;
+    border-bottom: 1px solid grey;
+    padding: 3px;
+    border-radius: 10px;
+}

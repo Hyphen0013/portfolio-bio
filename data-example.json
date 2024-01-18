@@ -4,6 +4,7 @@
     "image": "./images/img/Aditya Image.jpg",
     "overall_experience": "3.8+ Years",
     "current_profile": "Software Engineer",
+
     "detail": [
         {
             "height": "5' 6\"",
@@ -11,12 +12,14 @@
             "mob_2": "8130683129"
         }
     ],
+
     "mobile": [
         {
             "mob_1": "8700172984",
             "mob_2": "8130683129"
         }
     ],
+
     "personal_detail": [
         {
             "father_name": "Mr. Sanjay Parsad",
@@ -28,10 +31,12 @@
             "siter_2_martial_status": "Married"
         }
     ],
+
     "known_language": [
         "Hindi",
         "English"
     ],
+
     "personal_address": [
         {
             "house": "House No. 20",
@@ -44,14 +49,17 @@
             "pincode": "110061"
         }
     ],
+
     "declaration": {
         "declaration": "I hereby declare that the above-mentioned information is correct up to my knowledge and I bear the responsibility for the correctness of the above-mentioned particulars."
     },
+
     "career_object": {
         "header_description": "Innovative, task-driven professional with 3 years and 8 Months of experience as a full stack development across product and service base firms using ReactJS and SpringBoot. Extensive experience in Making NBFC Portal (Manage LOS and LMS), Manage Inventory for Hotels, Make API and RESTful Webservice in (Java), Make Microservices, Good hand in Java Collection, Design Pattern - with unit testing and good knowledge in code debugging simple/complex issues, and implementing new features based on user feedback and good hand in JavaScript and ReactJS with testing in Browser ",
         "description": "To be a part of dynamic and challenging organization that will help in effective utilization and enhancement of my skills toward the achievement of self and organizational objectives.",
         "points": "Project management, Code validation skills, Team leadership"
     },
+    
     "project": [
         {
             "minor_project": "College Management system, Catering services website named \"FoodCompany\"",
@@ -62,23 +70,23 @@
                 {
                     "link": "https://hyphen0013.github.io/portfolio-bio/",
                     "describe": "Portfolio (Data stored in JSON and replicate data by JavaScript use of XMLHttpRequest)"
-                },
+                },                
                 {
                     "link": "https://react-full-features.netlify.app/",
                     "describe": "In this project i used most of concept in react Class Component, Functional Component, Route V6, two way binding, Nav and many more."
-                },
+                },                  
                 {
                     "link": "Nigyroom",
                     "describe": "This project has many features. Login as backend user / front-end user. Backend user who manage the website. Project has login feature with social site, simple login, email verification, search user/house, like feature, rate the house and add as friend and many more."
-                },
+                },                  
                 {
                     "link": "Simple Search Engine",
                     "describe": "Search engine! Made in express (NodeJS) and template ejs. You can search people and get details of the person. Scroll bottom to load more data in dashboard page"
-                },
+                },                              
                 {
                     "link": "UI Static Website",
                     "describe": "Static Website (Use Express - NodeJS for dynamic route)"
-                },
+                },                
                 {
                     "link": "Simple Static Website",
                     "describe": "Static Website (use HTML, CSS and JavaScript)"
@@ -97,12 +105,15 @@
                 }
             ]
         }
+
     ],
+
     "work_history": {
         "type": "Web Development",
         "organization": "As an intern in \"YouLorry\",",
         "address": "Uttar Pradesh from June 2017 to Aug 2017"
     },
+    
     "summer_intership": {
         "intern_1": {
             "type": "Web Development",
@@ -112,9 +123,10 @@
             "field": "Java and Web Development",
             "address": "IEC College of Engineering and Technology",
             "class": "fas fa-users internship",
-            "image": "./images/internship.png"
+            "image": "./images/internship.png"  
         }
     },
+    
     "technical_skills": {
         "tech_skill_1": {
             "type": "ReactJS",
@@ -126,7 +138,7 @@
                 "Good hands on React Hooks",
                 "Working with Redux",
                 "Working with Redux-Thunk, Redux promise, Redux-Saga and Redux Toolkit"
-            ]
+            ]           
         },
         "tech_skill_2": {
             "type": "SpringBoot",
@@ -136,9 +148,10 @@
                 "Working with JWT Authentication",
                 "Good hands on Spring Data JPA",
                 "Make Microservice according to services"
-            ]
+            ]           
         }
     },
+    
     "work_experience": {
         "company_1": {
             "type": "Software Engineer",
@@ -151,15 +164,18 @@
             "short_address": "Noida - 3",
             "class": "fas fa-industry",
             "image": "./images/organization.png",
-            "work_description": [
-                "Make Webservice in Java",
-                "Make Whole new Module with different functionalities",
+            "project_1": "BirchStreet Systems, Inc",
+            "duration_1": "January 2022 to April 2023",
+            "skills_1": "ReactJS, Redux, Java(Spring Boot), PLSQL, AG Grid, J4",
+            "work_description_1": [
+                "Make Whole new Module designed front UI and make Webservice in Spring Boot and connect to front-end with different functionalities like search feature, extract data and save to CSV file",
                 "Achieved 100% on-time project delivery to meet the regulatory milestone",
                 "Use AG Grid for data render in table",
                 "Use in-built J4 Frame built by Garg Data Information (P) LTD.",
-                "Make a RESTful Web service in Spring Boot and Replicate on Front-end use of ReactJS."
+                "Make a RESTful Web service in Spring Boot and Replicate on Front-end use of ReactJS.",
+                "Do Unit Test and push data using source tree, use Agile Technology for CR management."
             ]
-        },
+        },        
         "company_2": {
             "type": "Software Engineer",
             "status": "leave",
@@ -171,18 +187,33 @@
             "short_address": "Noida - 62",
             "class": "fas fa-industry",
             "image": "./images/organization.png",
-            "work_description": [
+            "project_1": "ARKA Fincap",
+            "duration_1": "January 2021 to January 2022",
+            "skills_1": "ReactJS, Redux, Java(Spring Boot), MYSQL, DataTable",
+            "work_description_1": [
                 "Work as Full Stack Developer",
-                "UI Design and connect to backend",
-                "Make RESTful Webservice",
-                "Call API like Karza, etc, for check Aadhar, PAN Card varification",
-                "Encrypt data for API use SHA-16 algorithm to encrypt data",
-                "Make a RESTful Web service in Spring Boot and Replicate on Front-end use of ReactJS. Working with Redux with state management",
-                "Make microservice for some modules and services",
-                "Mentored junior team members, lead and guide them."
+                "Design and developed Entity, Master module with front-end and backend validation.",
+                "For backend make webservice in spring boot and export data in PDF and CSV file and form CSV file save data to database.",
+                "For document verification use Karza API like for Aadhar, PAN card, Voter ID Card verification.",
+                "Use SHA-16 algorithm to encrypt document like Aadhar, PAN card, Voter ID Card and send as JSON in RESTful Webservice",
+                "Do Unit Test and push data on Gitlab using version control system.",
+                "Mentored junior team members, lead and guide them in project"
+            ],         
+            "project_2": "Rent Alpha",
+            "duration_2": "September 2019 to December 2020",
+            "skills_2": "ReactJS, Redux, Java(Spring Boot), MYSQL, DataTable",
+            "work_description_2": [
+                "Work as Full Stack Developer",
+                "Design and developed Entity, Master module with front-end and backend validation.",
+                "For backend make webservice in spring boot and export data in PDF and CSV file and form CSV file save data to database.",
+                "For document verification use Karza API like for Aadhar, PAN card, Voter ID Card verification.",
+                "Use SHA-16 algorithm to encrypt document like Aadhar, PAN card, Voter ID Card and send as JSON in RESTful Webservice",
+                "Do Unit Test and push data on Gitlab using version control system.",
+                "Mentored junior team members, lead and guide them in project"
             ]
         }
     },
+    
     "education": {
         "edu_1": {
             "cource": "\"B. Tech\"",
@@ -192,7 +223,7 @@
             "branch": "Computer Science",
             "aggregate": "67%",
             "affiliated": "AKTU",
-            "address": "Plot No.:- 4, Surajpur Kasna Road, Institutional Area, Knowledge Park I",
+            "address": "Plot No.:- 4, Surajpur Kasna Road, Institutional Area, Knowledge Park I"  ,
             "city": "Greater Noida",
             "state": "Uttar Pradesh",
             "pin": "201310",
@@ -207,7 +238,7 @@
             "branch": "Science (Non Medical)",
             "aggregate": "59%",
             "affiliated": "CBSE",
-            "address": "Moti Bagh",
+            "address": "Moti Bagh"  ,
             "city": "New Delhi",
             "state": "New Delhi",
             "pin": "110021",
@@ -222,7 +253,7 @@
             "branch": "",
             "aggregate": "7.4",
             "affiliated": "CBSE",
-            "address": "Kapashera",
+            "address": "Kapashera"  ,
             "city": "New Delhi",
             "state": "New Delhi",
             "pin": "110037",
@@ -230,6 +261,7 @@
             "image": "./images/school.png"
         }
     },
+
     "programming": [
         {
             "language": "HTML",
@@ -239,7 +271,7 @@
             "class": "fab fa-html5",
             "more_description": "",
             "display": "Y"
-        },
+        },    
         {
             "language": "CSS",
             "check_img": "N",
@@ -330,57 +362,61 @@
             "more_description": "",
             "display": "Y"
         }
+
     ],
+
     "os": [
         {
-            "class": "fab fa-ubuntu",
+            "class":"fab fa-ubuntu",
             "os_type": "Ubuntu Operating System"
         },
         {
-            "class": "fab fa-apple",
+            "class":"fab fa-apple",
             "os_type": "Mac Operating System"
         },
         {
-            "class": "fab fa-windows",
+            "class":"fab fa-windows",
             "os_type": "Windows Operating System"
         },
         {
-            "class": "fab fa-git-square",
+            "class":"fab fa-git-square",
             "os_type": "(GIT) git version control"
         }
     ],
+
     "functional_skills": [
         {
-            "class": "fab fa-jira",
+            "class":"fab fa-jira",
             "tech-name": "jira",
             "show": "Y"
         },
         {
-            "class": "fab fa-bitbucket",
+            "class":"fab fa-bitbucket",
             "tech-name": "bitbucket",
-            "show": "Y"
+            "show": "Y"            
         },
         {
-            "class": "fab fa-sourcetree",
+            "class":"fab fa-sourcetree",
             "tech-name": "source tree",
-            "show": "Y"
+            "show": "Y"            
         },
         {
-            "class": "fab fa-gitlab",
+            "class":"fab fa-gitlab",
             "tech-name": "gitlab",
-            "show": "Y"
+            "show": "Y"            
         },
         {
-            "class": "fab fa-github",
+            "class":"fab fa-github",
             "tech-name": "github",
-            "show": "Y"
+            "show": "Y"            
         },
         {
             "image": "./images/programming/postman.png",
             "tech-name": "Postman",
-            "show": "Y"
+            "show": "Y"            
         }
     ],
+
     "project_experience": [
         "Work in 3 projects as Fullstack in organization related to Banking Sector and 1 in Product based",
         "E-com website with cart and return policy made by self",
@@ -389,6 +425,7 @@
         "Make webservice in Java",
         "Make Microservices in SpringBoot"
     ],
+
     "certification": [
         {
             "type": "Web Development",
@@ -403,12 +440,14 @@
             "image": "./images/certificate.png"
         }
     ],
+
     "community_activities": [
         {
             "description_1": "Volunteer in College fest",
             "description_2": "NFS gaming zone competition winner"
-        }
+        }        
     ],
+
     "personal_strength": [
         "Diligent working attitude.",
         "Flexibility and adaptability.",
@@ -416,6 +455,7 @@
         "Stress Tolerance.",
         "Positive attitude"
     ],
+
     "hobbies": [
         "Making new things, with coding",
         "Learning new technologies (love coding in React)",
@@ -423,6 +463,7 @@
         "Watching movie, Series startup related, Sci-Fi",
         "Playing Cricket"
     ],
+
     "social_site": [
         {
             "site": "Gmail",
@@ -443,7 +484,7 @@
             "email": "8130683129, <br>8700172984",
             "link_display": "N",
             "link": ""
-        },
+        },        
         {
             "site": "Address",
             "social_site": "N",
@@ -453,7 +494,7 @@
             "email": "House No. 20, Gali No. 4, Salapur Khera - Bijwasan, New Delhi (India) - 110061",
             "link_display": "N",
             "link": ""
-        },
+        },        
         {
             "site": "LinkedIn",
             "social_site": "Y",
@@ -515,6 +556,7 @@
             "link": "digyspab@gmail.com"
         }
     ],
+
     "technical": [
         {
             "language": "JAVA"
