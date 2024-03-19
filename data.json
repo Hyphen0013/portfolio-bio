@@ -2,7 +2,7 @@
     "name": "Aditya",
     "nic_name": "Rocky",
     "image": "./images/img/Aditya Image.jpg",
-    "overall_experience": "3.8+ Years",
+    "overall_experience": "3.10+ Years",
     "current_profile": "Software Engineer",
     "detail": [
         {
@@ -48,7 +48,7 @@
         "declaration": "I hereby declare that the above-mentioned information is correct up to my knowledge and I bear the responsibility for the correctness of the above-mentioned particulars."
     },
     "career_object": {
-        "header_description": "Innovative, task-driven professional with 3 years and 8 Months of experience as a full stack development across product and service base firms using ReactJS and SpringBoot. Extensive experience in Making NBFC Portal (Manage LOS and LMS), Manage Inventory for Hotels, Make API and RESTful Webservice in (Java), Make Microservices, Good hand in Java Collection, Design Pattern - with unit testing and good knowledge in code debugging simple/complex issues, and implementing new features based on user feedback and good hand in JavaScript and ReactJS with testing in Browser ",
+        "header_description": "Innovative, task-driven professional with 3 years and 10 Months of experience as a full stack development across product and service base firms using ReactJS and SpringBoot. Extensive experience in Making NBFC Portal (Manage LOS and LMS), Manage Inventory for Hotels, Make API and RESTful Webservice in (Java), Make Microservices, Good hand in Java Collection, Design Pattern - with unit testing and good knowledge in code debugging simple/complex issues, and implementing new features based on user feedback and good hand in JavaScript and ReactJS with testing in Browser ",
         "description": "To be a part of dynamic and challenging organization that will help in effective utilization and enhancement of my skills toward the achievement of self and organizational objectives.",
         "points": "Project management, Code validation skills, Team leadership"
     },
@@ -141,6 +141,24 @@
     },
     "work_experience": {
         "company_1": {
+            "type": "Software Engineer - Full Stack",
+            "status": "working",
+            "organization": "Ferns N Petals Pvt. Ltd.",
+            "year": "2024-02 to Current",
+            "technology": "Work as <i>Full Stack </i>",
+            "total_exp": "Currently Working",
+            "address": "Vatika 44, Plot no 75, Sector 44, Gurugram, Haryana 122001, India.",
+            "short_address": "Sector 44, Gurugram",
+            "class": "fas fa-industry",
+            "image": "./images/organization.png",
+            "work_description": [
+                "Work as Full Stack Developer",
+                "Work on OMS and CMS",
+                "Use ReactJS for some Service and for other Services use FreeMarker Java Template Engine (FTL)",
+                "Use Solr, OfBiz and Redis"
+            ]
+        },
+        "company_2": {
             "type": "Software Engineer",
             "status": "leave",
             "organization": "\"Garg Data Information (P) LTD\"",
@@ -157,10 +175,12 @@
                 "Achieved 100% on-time project delivery to meet the regulatory milestone",
                 "Use AG Grid for data render in table",
                 "Use in-built J4 Frame built by Garg Data Information (P) LTD.",
-                "Make a RESTful Web service in Spring Boot and Replicate on Front-end use of ReactJS."
+                "Make a RESTful Web service in Spring Boot and Replicate on Front-end use of ReactJS.",
+                "Work on module Purchase Order (PO), Invoice Module and Order Sheet",
+                "Change old UI to new UI with some addition of functionality in PR Selection"
             ]
         },
-        "company_2": {
+        "company_3": {
             "type": "Software Engineer",
             "status": "leave",
             "organization": "\"Prolitus Technology Pvt. Ltd. \"",
