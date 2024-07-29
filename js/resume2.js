@@ -30,9 +30,7 @@ function resume1Top(jsonOutput) {
                         <div>
                             <p><i class="fas fa-envelope-square"></i> aditya813068@gmail.com</p>
                             <p><i class="fab fa-linkedin-in"></i> https://www.linkedin.com/in/aditya-b9366b132/</p>
-                            <a href="https://www.youtube.com/@BinaryCall" target="_blank">
-                            <i class="fab fa-youtube" style="color: red;"></i> https://www.youtube.com/@BinaryCall
-                            </a>
+           
                         </div>
                         <div>
                             <p><i class="fab fa-github"></i> https://github.com/digyspab</p>
@@ -181,7 +179,7 @@ function professionalLeft(jsonOutput) {
             <hr>  
             <div class="padding-container_1">
                 <div class="resume1-header">
-                    ${filterWordsAndModify("3 years and 10 Months", jsonOutput.career_object.header_description)}
+                    ${filterWordsAndModify("4.2 years", jsonOutput.career_object.header_description)}
                 </div>
             </div> 
     `;
@@ -200,15 +198,18 @@ function workExperResumeLeft(jsonOutput) {
 
         firstOutput += '<div class="padding-equal border-dotted">';
         firstOutput += '<span class="main_header-res1 main_sub-header fw_300" style="font-size: 1.3em;">'+ jsonOutput.work_experience[work]['type'] +'</span>';
-        firstOutput += '<p class="mt-1 f-roboto main_sub-header font-p" style="font-size: 1em;"><i>' + beautifyWord(jsonOutput.work_experience[work]['organization'], '"') +'</i></p>';
+        firstOutput += '<p class="mt-1 f-roboto main_sub-header font-p" style="font-size: 1em;"><i>' + beautifyWord(jsonOutput.work_experience[work]['organization'], '"') +'</i>, ' + jsonOutput.work_experience[work]['org_based'] + '</p>';
         firstOutput += '<ul>';
         firstOutput += '<li class="work_exper-address fw_100 main_sub-header font-p">';
-        firstOutput += '<i>' + jsonOutput.work_experience[work]['year'] + '</i>';
+        firstOutput += '<span>Duration - ' + jsonOutput.work_experience[work]['duration'] + '</span>';
         firstOutput += '<i><small>' + jsonOutput.work_experience[work]['short_address'] + '</small></i>';
         firstOutput += '</li>';
         firstOutput += '<div class="mt-1 work_exper-description main_sub-header font-p">';
         
-        // Project 1
+        // firstOutput += '<p style="margin-bottom: 5px;"><span style="text-decoration-line: underline; font-weight: 600;">Organization based on</span> - ' + jsonOutput.work_experience[work]['org_based'] + '</p>'
+        firstOutput += '<p style="margin-bottom: 5px;"><span style="text-decoration-line: underline; font-weight: 600;">Product Name</span> - ' + jsonOutput.work_experience[work]['project_name'] + '</p>'
+
+        // Project 10 
         // firstOutput += '<p class="project-border"><b style="padding-right: 10px;">Projects 1: </b> '+ jsonOutput.work_experience[work]['project_1'] +'</p>';
 
         // firstOutput += '<p style="margin-bottom: 10px;"> <b>Duration: </b> '+ jsonOutput.work_experience[work]['duration_1'] +'</p>';
@@ -216,6 +217,8 @@ function workExperResumeLeft(jsonOutput) {
         // firstOutput += '<p style="margin-bottom: 10px;"> <b>Skills: </b> '+ jsonOutput.work_experience[work]['skills_1'] +'</p>';
         
         // firstOutput += '<p style="margin-bottom: 5px;"><b>Roles & Responsibilities</b></p>';
+
+        firstOutput += '<p style="margin-top: 8px; margin-bottom: 4px;"><span style="font-weight: 600;">Roles and Responsibilities</span></p>'
         jsonOutput.work_experience[work]['work_description'].forEach(function(value, index) {
             firstOutput += '<li style="margin-bottom: 5px;">' + value + '</li>';
         }) 
