@@ -26,7 +26,7 @@ function resume1Top(jsonOutput) {
                 <div class="resume1-header">
                     <h1 class="f-blue" style="font-size: 1.2em; letter-spacing: 1.2px;">${jsonOutput.name}</h1>
                     <span class="main_header-res1 f-blue main_sub-header fw_300">${jsonOutput.current_profile}</span>
-                    ${filterWordsAndModify("4.2+ years", jsonOutput.career_object.header_description)}
+                    ${filterWordsAndModify("4.8+ years", jsonOutput.career_object.header_description)}
                 </div>
             </div>  
         </div>
