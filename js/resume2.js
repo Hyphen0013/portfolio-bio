@@ -13,7 +13,7 @@ http.onload = function () {
 function resume1Top(jsonOutput) {
     let firstOutput = "";
     firstOutput += `
-        <div class="resume1_container-top" id="resume1_container-top">
+        <div class="resume1_container-top" id="resume1_container-top" style="margin-top: -20px;">
             
             <div class="bg-grey padding-container" style="width: inherit;">
                 <div class="resume1-header">
@@ -179,7 +179,7 @@ function professionalLeft(jsonOutput) {
             <hr>  
             <div class="padding-container_1">
                 <div class="resume1-header">
-                    ${filterWordsAndModify("4.2 years", jsonOutput.career_object.header_description)}
+                    ${filterWordsAndModify("5+ years", jsonOutput.career_object.header_description)}
                 </div>
             </div> 
     `;

@@ -2,7 +2,7 @@
     "name": "Aditya",
     "nic_name": "Rocky",
     "image": "./images/img/Aditya Image.jpg",
-    "overall_experience": "4.2 years",
+    "overall_experience": "5+ years",
     "current_profile": "Software Engineer",
     "detail": [
         {
@@ -48,7 +48,7 @@
         "declaration": "I hereby declare that the above-mentioned information is correct up to my knowledge and I bear the responsibility for the correctness of the above-mentioned particulars."
     },
     "career_object": {
-        "header_description": "Innovative, task-driven professional with 4.2 years of experience as a full stack development across product and service base firms using ReactJS and SpringBoot. Extensive experience in Making NBFC Portal (Manage LOS and LMS), Manage Inventory for Hotels, Make API and RESTful Webservice in (Java), Make Microservices, Good hand in Java Collection, Design Pattern - with unit testing and good knowledge in code debugging simple/complex issues, and implementing new features based on user feedback and good hand in JavaScript and ReactJS with testing in Browser ",
+        "header_description": "Innovative, task-driven professional with 5 years of experience as a full stack development across product and service base firms using ReactJS and SpringBoot. Extensive experience in Making NBFC Portal (Manage LOS and LMS), Manage Inventory for Hotels, Make API and RESTful Webservice in (Java), Make Microservices, Good hand in Java Collection, Design Pattern - with unit testing and good knowledge in code debugging simple/complex issues, and implementing new features based on user feedback and good hand in JavaScript and ReactJS with testing in Browser ",
         "description": "To be a part of dynamic and challenging organization that will help in effective utilization and enhancement of my skills toward the achievement of self and organizational objectives.",
         "points": "Project management, Code validation skills, Team leadership"
     },
@@ -155,11 +155,13 @@
             "project_name": "Ferns & Petals",
             "duration": "February, 2024 - Currently Working",
             "work_description": [
-                "Implement FarEye API for delivery",
-                "Implement on Payment Gateway PayNow",
-                "Work on OMS and CMS",
-                "Use ReactJS for some Service and for other Services use FreeMarker Java Template Engine (FTL)",
-                "Use Solr, OfBiz and Redis"
+                "Integrated FarEye API to enhance delivery tracking and logistics operations.",
+                "Implemented Rudderstack for comprehensive tracking of user journeys across platforms.",
+                "Developed and launched a Gold Membership plan tailored for overseas customers.",
+                "Integrated PayNow as a secure and seamless payment gateway solution.",
+                "Contributed to the enhancement and maintenance of Order Management System (OMS).",
+                "Developed frontend components using ReactJS for select services, and used FreeMarker Template Language (FTL) for server-side rendering in other services.",
+                "Utilized technologies like Solr for search functionality, OfBiz for e-commerce backend services, and Redis for caching and session management."
             ]
         },
         "company_2": {
@@ -175,16 +177,17 @@
             "image": "./images/organization.png",
             "org_based": "Product-Based Organization",
             "project_name": "Birchstreet",
-            "duration": "April, 2023 - January, 2024",
+            "duration": "January, 2022 - April, 2023",
             "work_description": [
-                "Make Webservice in Java",
-                "Make Whole new Module with different functionalities",
-                "Achieved 100% on-time project delivery to meet the regulatory milestone",
-                "Use AG Grid for data render in table",
-                "Use in-built J4 Frame built by Garg Data Information (P) LTD.",
-                "Make a RESTful Web service in Spring Boot and Replicate on Front-end use of ReactJS.",
-                "Work on module Purchase Order (PO), Invoice Module and Order Sheet",
-                "Change old UI to new UI with some addition of functionality in PR Selection"
+                "Contributed to the development and enhancement of key modules including Purchase Order (PO), Invoice, and Order Sheet.",
+                "Upgraded legacy user interfaces by modernizing the UI/UX, including functional enhancements in the PR Selection process.",
+                "Developed web services in Java, ensuring modular and reusable backend components.",
+                "Designed and implemented a completely new module with diverse and custom business functionalities.",
+                "Successfully delivered 100% of projects on time, meeting critical regulatory milestones.",
+                "Utilized AG Grid for dynamic and efficient data rendering in complex tabular structures.",
+                "Worked with a proprietary framework, J4 Frame, developed by Garg Data Information (P) LTD., to accelerate development and ensure consistency.",
+                "Built RESTful web services using Spring Boot and integrated with ReactJS for seamless frontend-backend communication.",
+                "Work on module Purchase Order (PO), Invoice Module and Order Sheet"
             ]
         },
         "company_3": {
@@ -202,14 +205,14 @@
             "project_name": "Arka and Fincap",
             "duration": "August, 2019 - January, 2022",
             "work_description": [
-                "Work as Full Stack Developer",
-                "UI Design and connect to backend",
-                "Make RESTful Webservice",
-                "Call API like Karza, etc, for check Aadhar, PAN Card varification",
+                "Work on LOS part for enhance application speed and data capture accuracy",
+                "Worked as a Full Stack Developer, handling both frontend and backend development tasks end-to-end.",
+                "Designed user interfaces (UI) and seamlessly integrated them with backend services to ensure smooth data flow.",
+                "Integrated third-party APIs such as Karza for Aadhaar and PAN card verification, enhancing identity validation workflows.",
+                "Implemented data encryption using the SHA-16 algorithm to ensure secure communication with APIs.",
                 "Encrypt data for API use SHA-16 algorithm to encrypt data",
-                "Make a RESTful Web service in Spring Boot and Replicate on Front-end use of ReactJS. Working with Redux with state management",
-                "Make microservice for some modules and services",
-                "Mentored junior team members, lead and guide them."
+                "Built and consumed RESTful services using Spring Boot, and replicated the functionality on the frontend with ReactJS, using Redux for effective state management.",
+                "Mentored junior developers, providing technical guidance and leadership to ensure team productivity and code quality."
             ]
         }
     },
@@ -409,6 +412,36 @@
             "image": "./images/programming/postman.png",
             "tech-name": "Postman",
             "show": "Y"
+        },
+        {
+            "image": "./images/programming/scrum.png",
+            "tech-name": "Scrum Methodology",
+            "show": "Y"
+        },
+        {
+            "image": "./images/programming/agile1.png",
+            "tech-name": "Agile",
+            "show": "Y"
+        },
+        {
+            "image": "./images/programming/jenkins-original.svg",
+            "tech-name": "Jenkins",
+            "show": "Y"
+        },
+        {
+            "image": "./images/programming/kafka-icon.svg",
+            "tech-name": "Kafka",
+            "show": "Y"
+        },
+        {
+            "image": "./images/programming/ci-cd-line.svg",
+            "tech-name": "CI-CD Pipeline",
+            "show": "Y"
+        },
+        {
+            "image": "./images/programming/docker-original-wordmark.svg",
+            "tech-name": "Docker",
+            "show": "Y"
         }
     ],
     "project_experience": [
@@ -592,6 +625,15 @@
             "language": "Docker"
         },
         {
+            "language": "Kafka"
+        },
+        {
+            "language": "Jenkins"
+        },
+        {
+            "language": "CI/CD Pipeline"
+        },
+        {
             "language": "HTML & CSS, JS"
         },
         {
@@ -608,9 +650,6 @@
         },
         {
             "language": "Postman"
-        },
-        {
-            "language": "Jenkins"
         },
         {
             "language": "Agile Software Development"

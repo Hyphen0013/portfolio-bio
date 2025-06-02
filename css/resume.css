@@ -1,10 +1,15 @@
 body {
     font-size: 1rem;
-    font-family: 'Heebo', sans-serif;
+    /* font-family: 'Heebo', sans-serif; */
     /* font-family: 'Merriweather', serif; */
     /* font-family: 'Raleway', sans-serif; */
     /* font-family: 'Roboto', sans-serif; */
     /* font-family: 'Roboto Mono', monospace;     */
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
 }
 
 footer {
@@ -77,7 +82,7 @@ table tr, td {
 .resume1_bottom-icon table tr, td {
     border: 0;
     padding: 6px 2px;
-    font-family: 'Raleway', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
 }
 
 .fit-content {
@@ -86,7 +91,7 @@ table tr, td {
     width: 200px;
     white-space: pre-wrap;
     white-space: break-spaces;
-    font-family: 'Lato', sans-serif;
+    /* font-family: 'Lato', sans-serif; */
 }
 
 /****************************************
@@ -95,10 +100,10 @@ table tr, td {
 .f-blue {color: var(--blue-light);}
 .main_header-res1 {font-size: 1em;}
 .font-p {font-size: 0.9em;}
-.main_sub-header {font-family: 'Raleway', sans-serif;}
+/* .main_sub-header {font-family: 'Raleway', sans-serif;} */
 .fw_300 {font-weight: 300;}
 .fw_100 {font-weight: 100;}
-.f-roboto {font-weight: 100; font-family: 'Roboto Mono', monospace;}
+/* .f-roboto {font-weight: 100; font-family: 'Roboto Mono', monospace;} */
 .work-experience {padding: 0.5rem 1rem;}
 .padding-equal {padding: 0.5rem 1rem;}
 .p_2-4 {padding: 2px 4px;}
@@ -187,7 +192,7 @@ hr {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    font-family: 'Lato', sans-serif;
+    /* font-family: 'Lato', sans-serif; */
 }
 
 .resume1_bottom-left h3 {
@@ -200,7 +205,7 @@ hr {
     display: inline-block;
     width: fit-content;
     margin: 10px 0;
-    font-family: 'Lato', sans-serif;
+    /* font-family: 'Lato', sans-serif; */
 }
 
 .res1_technical-skills span i {
@@ -254,10 +259,12 @@ hr {
     display: flex;
     justify-content: space-between;
     margin-top: 1rem;
+    font-weight: 200;
 }
 
 .work_exper-description li {
     list-style: inside;
+    padding: 2px 0;
 }
 
 .work_exper-description li:not(:last-child) {
