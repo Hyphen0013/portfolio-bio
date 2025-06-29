@@ -160,7 +160,6 @@
                 "Developed and launched a Gold Membership plan tailored for overseas customers.",
                 "Integrated PayNow as a secure and seamless payment gateway solution.",
                 "Contributed to the enhancement and maintenance of Order Management System (OMS).",
-                "Developed frontend components using ReactJS for select services, and used FreeMarker Template Language (FTL) for server-side rendering in other services.",
                 "Utilized technologies like Solr for search functionality, OfBiz for e-commerce backend services, and Redis for caching and session management."
             ]
         },
@@ -182,12 +181,8 @@
             "work_description": [
                 "Contributed to the development and enhancement of key modules including Purchase Order (PO), Invoice, and Order Sheet.",
                 "Upgraded legacy user interfaces by modernizing the UI/UX, including functional enhancements in the PR Selection process.",
-                "Developed web services in Java, ensuring modular and reusable backend components.",
-                "Designed and implemented a completely new module with diverse and custom business functionalities.",
-                "Successfully delivered 100% of projects on time, meeting critical regulatory milestones.",
                 "Utilized AG Grid for dynamic and efficient data rendering in complex tabular structures.",
                 "Worked with a proprietary framework, J4 Frame, developed by Garg Data Information (P) LTD., to accelerate development and ensure consistency.",
-                "Built RESTful web services using Spring Boot and integrated with ReactJS for seamless frontend-backend communication.",
                 "Work on module Purchase Order (PO), Invoice Module and Order Sheet"
             ]
         },
@@ -207,13 +202,8 @@
             "duration": "August, 2019 - January, 2022",
             "work_description": [
                 "Work on LOS part for enhance application speed and data capture accuracy",
-                "Worked as a Full Stack Developer, handling both frontend and backend development tasks end-to-end.",
-                "Designed user interfaces (UI) and seamlessly integrated them with backend services to ensure smooth data flow.",
                 "Integrated third-party APIs such as Karza for Aadhaar and PAN card verification, enhancing identity validation workflows.",
-                "Implemented data encryption using the SHA-16 algorithm to ensure secure communication with APIs.",
-                "Encrypt data for API use SHA-16 algorithm to encrypt data",
-                "Built and consumed RESTful services using Spring Boot, and replicated the functionality on the frontend with ReactJS, using Redux for effective state management.",
-                "Mentored junior developers, providing technical guidance and leadership to ensure team productivity and code quality."
+                "Implemented data encryption using the SHA-16 algorithm to ensure secure communication with APIs."
             ]
         }
     },

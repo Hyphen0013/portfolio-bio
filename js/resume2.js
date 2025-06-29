@@ -169,7 +169,6 @@ function resume1BottomLeft(jsonOutput) {
     document.querySelector("#resume1_container-bottom").insertAdjacentHTML("beforeend", firstOutput);
     professionalLeft(jsonOutput);
     workExperResumeLeft(jsonOutput);
-    keyAchievementLeft(jsonOutput);
 }
 
 function professionalLeft(jsonOutput) {
@@ -246,17 +245,17 @@ function workExperResumeLeft(jsonOutput) {
     document.querySelector("#work-experience").insertAdjacentHTML("beforeend", firstOutput);
 }
 
-function keyAchievementLeft(jsonOutput) {
-    let firstOutput = `
-        <div class="resume1_right-content">
-            <h3 class="main_header-res1 f-blue">KEY ACHIEVEMENT</h3>
-            <hr>  
-            <div class="res1_technical-skills padding-equal font-p">
-    `;
-    firstOutput += '<span class="main_header-res1 main_sub-header fw_300" style="font-size: 1.5em;"><i class="far fa-star f-blue" style="font-size:20px;"></i> Spot Appreciation</span>';
-    firstOutput += `<p class="main_header-res1 main_sub-header fw_300" style="margin-top: 5px;">
-                    Rated with the best annual performance rating for the year 2022 during my sprint;
-                </p>`;
-    firstOutput += "</div>";
-    document.querySelector("#work-experience").insertAdjacentHTML("beforeend", firstOutput);
-}
+// function keyAchievementLeft(jsonOutput) {
+//     let firstOutput = `
+//         <div class="resume1_right-content">
+//             <h3 class="main_header-res1 f-blue">KEY ACHIEVEMENT</h3>
+//             <hr>  
+//             <div class="res1_technical-skills padding-equal font-p">
+//     `;
+//     firstOutput += '<span class="main_header-res1 main_sub-header fw_300" style="font-size: 1.5em;"><i class="far fa-star f-blue" style="font-size:20px;"></i> Spot Appreciation</span>';
+//     firstOutput += `<p class="main_header-res1 main_sub-header fw_300" style="margin-top: 5px;">
+//                     Rated with the best annual performance rating for the year 2022 during my sprint;
+//                 </p>`;
+//     firstOutput += "</div>";
+//     document.querySelector("#work-experience").insertAdjacentHTML("beforeend", firstOutput);
+// }

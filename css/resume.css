@@ -1,5 +1,5 @@
 body {
-    font-size: 1rem;
+    font-size: 0.8rem;
     /* font-family: 'Heebo', sans-serif; */
     /* font-family: 'Merriweather', serif; */
     /* font-family: 'Raleway', sans-serif; */
@@ -124,12 +124,12 @@ table tr, td {
 .border-dotted::after {
     position: absolute;
     content: '';
-    padding: 5px 0;
+    /* padding: 5px 0; */
     width: 95%;
     border-bottom: 1px dotted var(--grey-1)
 }
 
-.border-dotted {position: relative; margin-bottom: 1rem;}
+.border-dotted {position: relative;}
 .border-dotted:nth-last-child(1)::after {border-bottom: none; margin-bottom: none}
 
 .resume1_container-top, .resume1_container-bottom {
@@ -258,7 +258,7 @@ hr {
 .work_exper-address {
     display: flex;
     justify-content: space-between;
-    margin-top: 1rem;
+    margin-top: 6px;
     font-weight: 200;
 }
 
