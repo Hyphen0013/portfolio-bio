@@ -141,10 +141,30 @@
     },
     "work_experience": {
         "company_1": {
+            "type": "Senior Associate Software Engineer - SD1",
+            "status": "working",
+            "organization": "Publicis Sapient",
+            "year": "2025-08 to Current",
+            "technology": "Work as <i>Backend Developer </i>",
+            "total_exp": "Currently Working",
+            "address": " Candor TechSpace Tower 8B, Sector 21 Rd, Dundahera, Haryana 122016, India.",
+            "short_address": "Sector 21, Gurugram",
+            "class": "fas fa-industry",
+            "image": "./images/organization.png",
+            "org_based": "Service-Based Organization",
+            "project_name": "Omantel",
+            "duration": "August, 2025 - Currently Working",
+            "work_description": [
+                "Worked on the Scheduler module, which included Autotopup and Bill Payments. Developed three microservices for this module: scheduler-config-service, scheduler-bill-processing, and scheduler-bill-orc-service.",
+                "Worked on the Mulkiya (vehicle registration) system, which involved two microservices: rop-adapter-service and utility-graphql-service.",
+                "Technologies used across these projects include Java 17, Spring Boot, CICM Database, DynamoDB, GraphQL, Docker, ArgoCD, CI/CD pipeline, AWS, SQS, Localstack, Redis, and more."
+            ]
+        },
+        "company_2": {
             "type": "Software Engineer - Full Stack",
             "status": "working",
             "organization": "Ferns N Petals Pvt. Ltd.",
-            "year": "2024-02 to Current",
+            "year": "2024-02 to 2025-08",
             "technology": "Work as <i>Full Stack </i>",
             "total_exp": "Currently Working",
             "address": "Vatika 44, Plot no 75, Sector 44, Gurugram, Haryana 122001, India.",
@@ -163,7 +183,7 @@
                 "Utilized technologies like Solr for search functionality, OfBiz for e-commerce backend services, and Redis for caching and session management."
             ]
         },
-        "company_2": {
+        "company_3": {
             "type": "Software Engineer",
             "status": "leave",
             "organization": "\"Garg Data Information (P) LTD\"",
@@ -186,7 +206,7 @@
                 "Work on module Purchase Order (PO), Invoice Module and Order Sheet"
             ]
         },
-        "company_3": {
+        "company_4": {
             "type": "Software Engineer",
             "status": "leave",
             "organization": "\"Prolitus Technology Pvt. Ltd. \"",
@@ -622,6 +642,9 @@
             "language": "Jenkins"
         },
         {
+            "language": "ArgoCD"
+        },
+        {
             "language": "CI/CD Pipeline"
         },
         {
@@ -629,6 +652,12 @@
         },
         {
             "language": "MySQL"
+        },
+        {
+            "language": "DynamoDB"
+        },
+        {
+            "language": "GraphQL"
         },
         {
             "language": "GIT"
@@ -641,6 +670,12 @@
         },
         {
             "language": "Postman"
+        },
+        {
+            "language": "SQS, (LocalStack)"
+        },
+        {
+            "language": "Redis, (Redis Insight)"
         },
         {
             "language": "Agile Software Development"
