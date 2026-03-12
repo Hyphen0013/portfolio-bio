@@ -178,7 +178,7 @@ function professionalLeft(jsonOutput) {
             <hr>  
             <div class="padding-container_1">
                 <div class="resume1-header">
-                    ${filterWordsAndModify("5+ years", jsonOutput.career_object.header_description)}
+                    ${filterWordsAndModify("6+ years", jsonOutput.career_object.header_description)}
                 </div>
             </div> 
     `;
