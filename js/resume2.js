@@ -172,13 +172,16 @@ function resume1BottomLeft(jsonOutput) {
 }
 
 function professionalLeft(jsonOutput) {
+    const experienceMatch = jsonOutput.career_object.header_description.match(/\d+(?:\.\d+)?\s*years?/i);
+    const experienceText = experienceMatch ? experienceMatch[0] : "6 years";
+
     let firstOutput = `
         <div class="resume1_right-content">
             <h3 class="main_header-res1 f-blue">PROFESSIONAL SUMMARY</h3>
             <hr>  
             <div class="padding-container_1">
                 <div class="resume1-header">
-                    ${filterWordsAndModify("6+ years", jsonOutput.career_object.header_description)}
+                    ${filterWordsAndModify(experienceText, jsonOutput.career_object.header_description)}
                 </div>
             </div> 
     `;
