@@ -440,11 +440,6 @@
             "show": "Y"
         },
         {
-            "image": "./images/programming/kafka-icon.svg",
-            "tech-name": "Kafka",
-            "show": "Y"
-        },
-        {
             "image": "./images/programming/ci-cd-line.svg",
             "tech-name": "CI-CD Pipeline",
             "show": "Y"
