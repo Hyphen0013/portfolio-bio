@@ -175,12 +175,12 @@
             "project_name": "Ferns & Petals",
             "duration": "February, 2024 - August, 2025",
             "work_description": [
-                "Integrated FarEye API to enhance delivery tracking and logistics operations.",
-                "Implemented Rudderstack for comprehensive tracking of user journeys across platforms.",
-                "Developed and launched a Gold Membership plan tailored for overseas customers.",
-                "Integrated PayNow as a secure and seamless payment gateway solution.",
-                "Contributed to the enhancement and maintenance of Order Management System (OMS).",
-                "Utilized technologies like Solr for search functionality, OfBiz for e-commerce backend services, and Redis for caching and session management."
+                "Integrated 'FarEye API' to enhance delivery tracking and logistics operations in 'ReactJS' and 'Spring Boot.'",
+                "Implemented 'RudderStack' for comprehensive tracking of user journeys across platforms with frontend '(ReactJS) and backend (Spring Boot)' integration.",
+                "Developed and launched a 'Gold Membership Plan' tailored for overseas customers.",
+                "Integrated 'PayNow' as a secure and seamless payment gateway solution.",
+                "Contributed to the enhancement and maintenance of the 'Order Management System (OMS)'.",
+                "Utilized technologies like 'Solr' for search functionality, 'Apache OFBiz' for e-commerce backend services, and 'Redis' for caching and session management."
             ]
         },
         "company_3": {
@@ -200,9 +200,9 @@
             "duration": "January, 2022 - April, 2023",
             "work_description": [
                 "Contributed to the development and enhancement of key modules including Purchase Order (PO), Invoice, and Order Sheet.",
-                "Upgraded legacy user interfaces by modernizing the UI/UX, including functional enhancements in the PR Selection process.",
-                "Utilized AG Grid for dynamic and efficient data rendering in complex tabular structures.",
-                "Worked with a proprietary framework, J4 Frame, developed by Garg Data Information (P) LTD., to accelerate development and ensure consistency.",
+                "Modernized legacy user interfaces and improved UI/UX, including enhancements in the PR Selection process.",
+                "Utilized AG Grid for efficient rendering of complex tabular data structures using ReactJS.",
+                "Worked with the proprietary framework J4 Frame to accelerate development and maintain consistency across applications.",
                 "Work on module Purchase Order (PO), Invoice Module and Order Sheet"
             ]
         },
@@ -221,9 +221,10 @@
             "project_name": "Arka and Fincap",
             "duration": "August, 2019 - January, 2022",
             "work_description": [
-                "Work on LOS part for enhance application speed and data capture accuracy",
-                "Integrated third-party APIs such as Karza for Aadhaar and PAN card verification, enhancing identity validation workflows.",
-                "Implemented data encryption using the SHA-16 algorithm to ensure secure communication with APIs."
+                "Contributed to the Loan Origination System (LOS) to improve application speed and data capture accuracy.",
+                "Integrated third-party APIs such as Karza for Aadhaar and PAN verification workflows.",
+                "Implemented secure API communication using SHA-256 encryption mechanisms.",
+                "For master module implement the feature of adding and managing various entities such as banks, branches, address, and more with frontend (ReactJS)"
             ]
         }
     },
