@@ -42,6 +42,13 @@ function filterWordsAndModify(wordMatch, paragraph) {
     return matchEl;
 }
 
+function highlightQuotedText(text) {
+    if (typeof text !== 'string') {
+        return text;
+    }
+    return text.replace(/'([^']+)'/g, '<strong style="color: #444242;">$1</strong>');
+}
+
 // Total Years and Months
 function monthDiff(dateFrom, dateTo) {
     var totalMonths = dateTo.getMonth() - dateFrom.getMonth() + (12 * (dateTo.getFullYear() - dateFrom.getFullYear()))

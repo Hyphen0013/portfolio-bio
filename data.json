@@ -155,8 +155,8 @@
             "project_name": "Omantel",
             "duration": "August, 2025 - Currently Working",
             "work_description": [
-                "Worked on the Scheduler module, which included Autotopup and Bill Payments. Developed three microservices for this module: scheduler-config-service, scheduler-bill-processing, and scheduler-bill-orc-service.",
-                "Worked on the Mulkiya (vehicle registration) system, which involved two microservices: rop-adapter-service and utility-graphql-service.",
+                "Worked on the 'Scheduler module', which included 'Autotopup' and 'Bill Payments'. Developed three microservices for this module: 'scheduler-config-service', 'scheduler-bill-processing', and 'scheduler-bill-orc-service'.",
+                "Worked on the 'Mulkiya' (vehicle registration) system, which involved two microservices: rop-adapter-service and utility-graphql-service.",
                 "Technologies used across these projects include Java 17, Spring Boot, CICM Database, DynamoDB, GraphQL, Docker, ArgoCD, CI/CD pipeline, AWS, SQS, Localstack, Redis, and more."
             ]
         },
@@ -199,11 +199,10 @@
             "duration": "January, 2022 - April, 2023",
             "duration": "January, 2022 - April, 2023",
             "work_description": [
-                "Contributed to the development and enhancement of key modules including Purchase Order (PO), Invoice, and Order Sheet.",
-                "Modernized legacy user interfaces and improved UI/UX, including enhancements in the PR Selection process.",
-                "Utilized AG Grid for efficient rendering of complex tabular data structures using ReactJS.",
-                "Worked with the proprietary framework J4 Frame to accelerate development and maintain consistency across applications.",
-                "Work on module Purchase Order (PO), Invoice Module and Order Sheet"
+                "Contributed to the development and enhancement of key modules including 'Purchase Order (PO)', 'Invoice', and 'Order Sheet'.",
+                "Modernized legacy user interfaces and 'improved UI/UX', including enhancements in the 'PR Selection' process.",
+                "Utilized 'AG Grid' for efficient rendering of complex tabular data structures using 'ReactJS'.",
+                "Worked with the proprietary 'framework J4 Frame' to accelerate development and maintain consistency across applications."
             ]
         },
         "company_4": {
@@ -221,10 +220,10 @@
             "project_name": "Arka and Fincap",
             "duration": "August, 2019 - January, 2022",
             "work_description": [
-                "Contributed to the Loan Origination System (LOS) to improve application speed and data capture accuracy.",
-                "Integrated third-party APIs such as Karza for Aadhaar and PAN verification workflows.",
-                "Implemented secure API communication using SHA-256 encryption mechanisms.",
-                "For master module implement the feature of adding and managing various entities such as banks, branches, address, and more with frontend (ReactJS)"
+                "Contributed to the 'Loan Origination System (LOS)' to improve application speed and data capture accuracy.",
+                "Integrated third-party APIs such as 'Karza' for Aadhaar and PAN verification workflows.",
+                "Implemented secure 'API communication' using SHA-256 encryption mechanisms.",
+                "For 'master module' implement the feature of adding and managing various entities such as banks, branches, address, and more with frontend '(ReactJS)'"
             ]
         }
     },

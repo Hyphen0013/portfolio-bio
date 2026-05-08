@@ -288,7 +288,7 @@ function workExperResume1(jsonOutput) {
         firstOutput += '<div class="mt-1 work_exper-description main_sub-header font-p">';
         
         jsonOutput.work_experience[work]['work_description'].forEach(function(value, index) {
-            firstOutput += '<li>' + value + '</li>';
+            firstOutput += '<li>' + highlightQuotedText(value) + '</li>';
         })        
         
         firstOutput += '</div>';

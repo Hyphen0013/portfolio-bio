@@ -222,7 +222,7 @@ function workExperResumeLeft(jsonOutput) {
 
         firstOutput += '<p style="margin-top: 8px; margin-bottom: 4px;"><span style="font-weight: 600;">Roles and Responsibilities</span></p>'
         jsonOutput.work_experience[work]['work_description'].forEach(function(value, index) {
-            firstOutput += '<li style="margin-bottom: 5px;">' + value + '</li>';
+            firstOutput += '<li style="margin-bottom: 5px;">' + highlightQuotedText(value) + '</li>';
         }) 
         
         // if(jsonOutput.work_experience[work]['project_2'] != undefined) {
