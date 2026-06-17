@@ -373,6 +373,24 @@
             "class": "fas fa-database",
             "more_description": "",
             "display": "Y"
+        },
+        {
+            "language": "DynamoDB",
+            "check_img": "Y",
+            "image": "./images/programming/dynamodb.png",
+            "description": "Amazon DynamoDB is a fully managed NoSQL database service that provides fast and predictable performance with seamless scalability.",
+            "class": "fas fa-database",
+            "more_description": "",
+            "display": "Y"
+        },
+        {
+            "language": "GraphQL",
+            "check_img": "Y",
+            "image": "./images/programming/graphql.png",
+            "description": "GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data.",
+            "class": "fas fa-database",
+            "more_description": "",
+            "display": "Y"
         }
     ],
     "os": [
